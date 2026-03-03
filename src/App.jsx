@@ -9,45 +9,61 @@ import ReactGA from "./ga";
 import { BrowserRouter, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
+function ScrollToHash() {
+	const location = useLocation();
+
+	useEffect(() => {
+		if (location.hash) {
+			// Small timeout ensures DOM is fully rendered before scrolling
+			const timeout = setTimeout(() => {
+				const el = document.querySelector(location.hash);
+				if (el) {
+					el.scrollIntoView({ behavior: "smooth" });
+				}
+			}, 100);
+			return () => clearTimeout(timeout);
+		}
+	}, [location.hash]);
+
+	return null;
+}
+function AnalyticsTracker() {
+	const location = useLocation();
+	useEffect(() => {
+		ReactGA.send({ hitType: "pageview", page: location.pathname });
+	}, [location]);
+	return null;
+}
 function App() {
-  function AnalyticsTracker() {
-    const location = useLocation();
-
-    useEffect(() => {
-      ReactGA.send({ hitType: "pageview", page: location.pathname });
-    }, [location]);
-
-    return null;
-  }
-  return (
-    <BrowserRouter>
-      <AnalyticsTracker />
-
-      <div className="h-full relative">
-        <Header />
-        <SideNav />
-        <div className="flex-1 ml-24 mr-4 max-sm:ml-14">
-          <main className="max-w-[1100px] mx-auto pb-20">
-            <section id="about" className="pt-16 scroll-mt-10">
-              <Hero />
-            </section>
-            <section id="skills" className="pt-16 max-sm:pt-0 ">
-              <Skills />
-            </section>
-            <section id="projects" className="pt-16 ">
-              <Projects />
-            </section>
-            <section id="experience" className="pt-16 ">
-              <Experience />
-            </section>
-            <section id="contact" className="pt-16 ">
-              <Contact />
-            </section>
-          </main>
-        </div>
-      </div>
-    </BrowserRouter>
-  );
+	return (
+		<BrowserRouter>
+			<AnalyticsTracker />
+			<ScrollToHash />
+			<div className="h-full relative">
+				<Header />
+				<SideNav />
+				<div className="flex-1 ml-24 mr-4 max-sm:ml-14">
+					<main className="max-w-[1100px] mx-auto pb-20">
+						<section id="about" className="pt-16 scroll-mt-10">
+							<Hero />
+						</section>
+						<section id="skills" className="pt-16 max-sm:pt-0 ">
+							<Skills />
+						</section>
+						<section id="projects" className="pt-16 ">
+							<Projects />
+						</section>
+						<section id="experience" className="pt-16 ">
+							<Experience />
+						</section>
+						<section id="contact" className="pt-16 ">
+							<Contact />
+						</section>
+					</main>
+				</div>
+			</div>
+		</BrowserRouter>
+	);
 }
 
 export default App;
