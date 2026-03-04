@@ -19,7 +19,7 @@ const Experience = () => {
 							animationFillMode: "both",
 							animationDuration: "1s",
 							animationTimingFunction: "ease-in-out",
-					  }
+						}
 					: {}
 			}
 		>
@@ -111,11 +111,11 @@ const Experience = () => {
 				</div>
 			</AnimatedBorder>
 
-			<article className="mt-10 p-6 dark:bg-backgroundLight bg-backgroundDark  dark:shadow-quoteDark shadow-quote text-center  max-w-2xl mx-auto">
+			{/* <article className="mt-10 p-6 dark:bg-backgroundLight bg-backgroundDark  dark:shadow-quoteDark shadow-quote text-center  max-w-2xl mx-auto">
 				<blockquote className="text-lg italic dark:text-backgroundDark text-textLight">
 					{t("experience.note")}
 				</blockquote>
-			</article>
+			</article> */}
 		</div>
 	);
 };
