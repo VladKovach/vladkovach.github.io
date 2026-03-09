@@ -3,6 +3,8 @@ import posterPrint from "../../assets/images/posterPrint.png";
 
 import coderr from "../../assets/images/coderr.png";
 
+import kanmind from "../../assets/images/kanmind.png";
+
 import SkillLogo from "../ui/SkillLogo/SkillLogo";
 import { AnimatedBorder } from "../ui/AnimatedBorder/AnimatedBorder";
 import { GetSvg } from "../GetSvg";
@@ -52,16 +54,15 @@ const Projects = () => {
 							<GetSvg svg="external" />
 						</a>
 						<ul className="list-disc ml-5 mt-3 space-y-2 text-sm w-full">
-							<li>{t("projects.coderr.description1")}</li>
-							<li>{t("projects.coderr.description2")}</li>
+							<li>coming soon...</li>
 						</ul>
 						<div className="mt-5 w-full p-1 max-mobile:text-center">
-							<SkillLogo name="Html" index={0} />
+							{/* <SkillLogo name="Html" index={0} />
 							<SkillLogo name="Scss" index={1} />
 							<SkillLogo name="Js" index={2} />
 							<SkillLogo name="React" index={3} />
 							<SkillLogo name="Webpack" index={4} />
-							<SkillLogo name="Figma" index={5} />
+							<SkillLogo name="Figma" index={5} /> */}
 						</div>
 					</div>
 				</div>
@@ -70,35 +71,34 @@ const Projects = () => {
 				<div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center   w-full justify-between">
 					<a
 						className="duration-300  shadow ml-2  hover:scale-103 rounded-projectImg max-mobile:flex   max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5"
-						href="https://vladkovach.github.io/plantShop/"
+						href="https://kanmind.vladkovach.com"
 						target="_blank"
 					>
 						<img
 							className="max-w-90 max-h-130 max-mobile:max-h-100 rounded-projectImg  "
-							src={plantShop}
-							alt="PlantShop"
+							src={kanmind}
+							alt="kanmind"
 						></img>
 					</a>
 					<div className="w-3/5 ml-10 max-mobile:ml-0 max-mobile:w-full">
 						<a
 							className="font-bold text-2xl inline-flex items-center"
-							href="https://vladkovach.github.io/plantShop/"
+							href="https://vladkovach.com"
 							target="_blank"
 						>
-							<span className="mr-2 text-darkOrange dark:text-lightOrange">Planty</span>
+							<span className="mr-2 text-darkOrange dark:text-lightOrange">KanMind</span>
 							<GetSvg svg="external" />
 						</a>
 						<ul className="list-disc ml-5 mt-3 space-y-2 text-sm w-full">
-							<li>{t("projects.description1")}</li>
-							<li>{t("projects.description2")}</li>
+							<li>coming soon...</li>
 						</ul>
 						<div className="mt-5 w-full p-1 max-mobile:text-center">
-							<SkillLogo name="Html" index={0} />
+							{/* <SkillLogo name="Html" index={0} />
 							<SkillLogo name="Scss" index={1} />
 							<SkillLogo name="Js" index={2} />
 							<SkillLogo name="React" index={3} />
 							<SkillLogo name="Webpack" index={4} />
-							<SkillLogo name="Figma" index={5} />
+							<SkillLogo name="Figma" index={5} /> */}
 						</div>
 					</div>
 				</div>
