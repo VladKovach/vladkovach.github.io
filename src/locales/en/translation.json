@@ -1,82 +1,82 @@
 {
-  "header": {
-    "about": "About",
-    "skills": "Skills",
-    "projects": "Projects",
-    "experience": "Experience",
-    "contact": "Contact"
-  },
-  "hero": {
-    "lets": "Let’s",
-    "buildWhat": "Build What You",
-    "imagine": "Imagine",
-    "plan": "Plan",
-    "desire": "Desire",
-    "think": "Think",
-    "hiThere": "Hi there!",
-    "intro": "It's nice to see you😊 I'm Vlad, a frontend developer with a strong desire to create impactful digital experiences.",
-    "viewProjects": "View Projects"
-  },
-  "about": {
-    "whatican": "What I can:",
-    "skill1": "Write clean, scalable code",
-    "skill2": "Implement diverse functionalities",
-    "skill3": "Create smooth, optimized responsive layouts",
-    "skill4": "Optimize site speed in line with Core Web Vitals",
-    "skill5": "Integrate various APIs and turn design-ready concepts into reality",
-    "skill6": "Develop elegant dark modes—from simple toggles to fully animated, custom themes",
-    "skill7": "Work seamlessly with React, Vue.js, Angular, or framework-less solutions",
-    "skill8": "Collaborate effectively within a team or thrive independently on the frontend",
-    "skill9": "Channel passion into every project—crafting innovative, user-centric experiences",
-    "skill10": "Continuously learn and innovate to keep up with the evolving web",
-    "languagesTitle": "Languages:",
-    "language1": "English: B2",
-    "language2": "German: B2",
-    "language3": "Ukrainian: native",
-    "language4": "Russian: C1"
-  },
-  "projects": {
-    "title": "Projects",
-    "description1": "Created an all-device-responsive/adaptive design for an online Shop",
-    "description2": "Implemented some light custom animations",
-    "description3": "Built the layout and functionality for an online shop",
-    "descriprion4": "Developed a responsive and adaptive design for all devices",
-    "description5": "Implemented dynamic product cards and payment integration",
-    "description6": "Added authentication using Auth0",
-    "description7": "Handled routing with React Router",
-    "description8": "Managed forms using Formik and validation with Yup",
-    "description9": "Integrated both internal and third-party APIs",
-    "description10": "Implemented error tracking using Sentry",
-    "description11": "Optimized performance to improve PageSpeed",
-    "description12": "Collaborated with team and worked closely with backend developers"
-  },
-  "experience": {
-    "title": "Experience",
-    "role1": "Frontend Developer",
-    "desc1": "Development of the admin page and enhancement of functionality for creating events.",
-    "role2": "Frontend Developer",
-    "desc2": "Development of an online shop.",
-    "note": "This portfolio does not represent the full extent of my knowledge, as some projects are still in progress, and others will remain unpublished. I am continuously learning new skills, and for the past six months, I have been intensely improving my English and German to achieve excellence in both spoken and written communication. This portfolio is constantly growing with projects that showcase both my current expertise and newly acquired knowledge."
-  },
-  "contact": {
-    "title": "Contact",
-    "description": "Have a question or a proposal? Feel free to reach out! 😊",
-    "emailLabel": "Email",
-    "emailPlaceholder": "you@example.com",
-    "subjectLabel": "Subject",
-    "subjectPlaceholder": "Subject",
-    "messageLabel": "Your Message",
-    "messagePlaceholder": "Type your message here...",
-    "send": "Send Message",
-    "sending": "Sending...",
-    "success": "Your message was sent successfully! 🚀",
-    "error": "Something went wrong. Please try again later. ❌",
-    "errors": {
-      "emailRequired": "It'll be much better to write one)",
-      "emailInvalid": "Please enter a valid email",
-      "subjectRequired": "It'll be much better to write one)",
-      "messageRequired": "It'll be much better to write one)",
-      "messageMinLength": "Could you please write at least 10 characters?"
-    }
-  }
+	"header": {
+		"about": "About",
+		"skills": "Skills",
+		"projects": "Projects",
+		"experience": "Experience",
+		"contact": "Contact"
+	},
+	"hero": {
+		"lets": "Let’s",
+		"buildWhat": "Build What You",
+		"imagine": "Imagine",
+		"plan": "Plan",
+		"desire": "Desire",
+		"think": "Think",
+		"hiThere": "Hi there!",
+		"intro": "It's nice to see you😊 I'm Vlad, a fullstack developer with a strong desire to create impactful digital experiences.",
+		"viewProjects": "View Projects"
+	},
+	"about": {
+		"whatican": "What I can:",
+		"skill1": "Write clean, scalable code",
+		"skill2": "Implement diverse functionalities",
+		"skill3": "Create smooth, optimized responsive layouts",
+		"skill4": "Optimize site speed in line with Core Web Vitals",
+		"skill5": "Integrate various APIs and turn design-ready concepts into reality",
+		"skill6": "Develop elegant dark modes—from simple toggles to fully animated, custom themes",
+		"skill7": "Work seamlessly with React, Vue.js, Angular, or framework-less solutions",
+		"skill8": "Collaborate effectively within a team or thrive independently on the fullstack",
+		"skill9": "Channel passion into every project—crafting innovative, user-centric experiences",
+		"skill10": "Continuously learn and innovate to keep up with the evolving web",
+		"languagesTitle": "Languages:",
+		"language1": "English: B2",
+		"language2": "German: B2",
+		"language3": "Ukrainian: native",
+		"language4": "Russian: C1"
+	},
+	"projects": {
+		"title": "Projects",
+		"description1": "Created an all-device-responsive/adaptive design for an online Shop",
+		"description2": "Implemented some light custom animations",
+		"description3": "Built the layout and functionality for an online shop",
+		"descriprion4": "Developed a responsive and adaptive design for all devices",
+		"description5": "Implemented dynamic product cards and payment integration",
+		"description6": "Added authentication using Auth0",
+		"description7": "Handled routing with React Router",
+		"description8": "Managed forms using Formik and validation with Yup",
+		"description9": "Integrated both internal and third-party APIs",
+		"description10": "Implemented error tracking using Sentry",
+		"description11": "Optimized performance to improve PageSpeed",
+		"description12": "Collaborated with team and worked closely with backend developers"
+	},
+	"experience": {
+		"title": "Experience",
+		"role1": "Frontend Developer",
+		"desc1": "Development of the admin page and enhancement of functionality for creating events.",
+		"role2": "Frontend Developer",
+		"desc2": "Development of an online shop.",
+		"note": "This portfolio does not represent the full extent of my knowledge, as some projects are still in progress, and others will remain unpublished. I am continuously learning new skills, and for the past six months, I have been intensely improving my English and German to achieve excellence in both spoken and written communication. This portfolio is constantly growing with projects that showcase both my current expertise and newly acquired knowledge."
+	},
+	"contact": {
+		"title": "Contact",
+		"description": "Have a question or a proposal? Feel free to reach out! 😊",
+		"emailLabel": "Email",
+		"emailPlaceholder": "you@example.com",
+		"subjectLabel": "Subject",
+		"subjectPlaceholder": "Subject",
+		"messageLabel": "Your Message",
+		"messagePlaceholder": "Type your message here...",
+		"send": "Send Message",
+		"sending": "Sending...",
+		"success": "Your message was sent successfully! 🚀",
+		"error": "Something went wrong. Please try again later. ❌",
+		"errors": {
+			"emailRequired": "It'll be much better to write one)",
+			"emailInvalid": "Please enter a valid email",
+			"subjectRequired": "It'll be much better to write one)",
+			"messageRequired": "It'll be much better to write one)",
+			"messageMinLength": "Could you please write at least 10 characters?"
+		}
+	}
 }

@@ -60,6 +60,7 @@ function App() {
 							<Contact />
 						</section>
 					</main>
+					<footer className="h-40" />
 				</div>
 			</div>
 		</BrowserRouter>
