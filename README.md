@@ -1,1 +1,1 @@
-vladkovach.github.io/portfolio/
+https://www.vladkovach.com
