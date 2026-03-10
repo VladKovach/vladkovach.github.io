@@ -23,7 +23,7 @@ const Experience = () => {
 					: {}
 			}
 		>
-			<h2 className="font-bold text-3xl">{t("experience.title")}</h2>
+			<h2 className="font-bold text-3xl max-mobile:text-2xl">{t("experience.title")}</h2>
 			<AnimatedBorder>
 				<div className="p-2  w-full ">
 					<div className="">
@@ -34,7 +34,7 @@ const Experience = () => {
 									href="https://2event.com/en/"
 									target="_blank"
 								>
-									<span className="font-bold mr-2 text-darkOrange dark:text-lightOrange">
+									<span className="font-bold mr-2 text-2xl max-mobile:text-xl text-darkOrange dark:text-lightOrange">
 										2event
 									</span>
 									<GetSvg svg="external" />
@@ -78,7 +78,7 @@ const Experience = () => {
 									href="https://posterprint.com.ua"
 									target="_blank"
 								>
-									<span className="font-bold mr-2 text-darkOrange dark:text-lightOrange">
+									<span className="font-bold mr-2 text-2xl max-mobile:text-xl text-darkOrange dark:text-lightOrange">
 										PosterPrint
 									</span>
 									<GetSvg svg="external" />

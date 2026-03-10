@@ -3,122 +3,125 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-backgroundDark: #212a31;
-  --color-backgroundLight: #fafafa;
-  --color-grayDark: #2e3944;
-  --color-customBlue: #DCD5FF;
-  --color-textLight: #d3d9d4;
-  --color-grayLight: #748d92;
-  --color-lightOrange: #e9a441;
-  --color-darkOrange: #f57f17;
-  --radius-projectImg: 10% 1%;
-  --breakpoint-mobile: 769px;
-  --shadow-btnhover: rgb(0, 0, 0, 0.4) -3px -3px 6px 1px;
-  --shadow-btn: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  --shadow-card: rgba(0, 0, 0, 0.24) 0px 0px 8px;
-  --shadow-inset: inset -2px -2px 4px hsla(0, 0%, 100%, 0.1), inset 2px 2px 4px rgba(0, 0, 0, 0.55);
-  --shadow-cardDark: rgba(255, 255, 255, 0.24) 0px 0px 8px;
-  --shadow-quote: inset 0 0 8px 8px #fafafa;
-  --shadow-quoteDark: inset 0 0 8px 8px #212a31, inset 0 0 8px 8px #fafafa;
-  --color-gradient: linear-gradient(180deg, #9FD5FF 0%, #DCD5FF 100%);
-  --shadow-btnDark: rgba(250, 250, 250, 0.4) 0px 2px 4px, rgba(250, 250, 250, 0.3) 0px 7px 13px -3px,    rgba(250, 250, 250, 0.2) 0px -3px 0px inset;
-  --shadow-btnDarkHover: rgb(250, 250, 250, 0.4) -3px -3px 6px 1px;
-
-
+	--color-backgroundDark: #212a31;
+	--color-backgroundLight: #fafafa;
+	--color-grayDark: #2e3944;
+	--color-customBlue: #dcd5ff;
+	--color-textLight: #d3d9d4;
+	--color-grayLight: #748d92;
+	--color-lightOrange: #e9a441;
+	--color-darkOrange: #f57f17;
+	--radius-projectImg: 10% 1%;
+	--breakpoint-mobile: 769px;
+	--shadow-btnhover: rgb(0, 0, 0, 0.4) -3px -3px 6px 1px;
+	--shadow-btn:
+		rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+		rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	--shadow-card: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+	--shadow-inset: inset -2px -2px 4px hsla(0, 0%, 100%, 0.1), inset 2px 2px 4px rgba(0, 0, 0, 0.55);
+	--shadow-cardDark: rgba(255, 255, 255, 0.24) 0px 0px 8px;
+	--shadow-quote: inset 0 0 8px 8px #fafafa;
+	--shadow-quoteDark: inset 0 0 8px 8px #212a31, inset 0 0 8px 8px #fafafa;
+	--color-gradient: linear-gradient(180deg, #9fd5ff 0%, #dcd5ff 100%);
+	--shadow-btnDark:
+		rgba(250, 250, 250, 0.4) 0px 2px 4px, rgba(250, 250, 250, 0.3) 0px 7px 13px -3px,
+		rgba(250, 250, 250, 0.2) 0px -3px 0px inset;
+	--shadow-btnDarkHover: rgb(250, 250, 250, 0.4) -3px -3px 6px 1px;
 }
+
 @keyframes scrollheaderDark {
-  to {
-    height: 55px;
-    box-shadow: -4px -4px 12px hsla(0, 0%, 100%, 0.05), 4px 4px 12px #000;
-  }
+	to {
+		height: 55px;
+		box-shadow:
+			-4px -4px 12px hsla(0, 0%, 100%, 0.05),
+			4px 4px 12px #000;
+	}
 }
 @keyframes scrollheader {
-  to {
-    height: 55px;
-    box-shadow: -4px -4px 12px hsla(0, 0%, 100%, 0.05), 4px 4px 12px #cacaca;
-  }
+	to {
+		height: 55px;
+		box-shadow:
+			-4px -4px 12px hsla(0, 0%, 100%, 0.05),
+			4px 4px 12px #cacaca;
+	}
 }
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :where(ul, ol):where([class]) {
-  padding-left: 0;
+	padding-left: 0;
 }
 
 body,
 :where(blockquote, figure):where([class]) {
-  margin: 0;
+	margin: 0;
 }
 
 :where(dd[class]) {
-  margin-left: 0;
+	margin-left: 0;
 }
 
 img,
 video {
-  display: block;
-  max-width: 100%;
-  height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 input,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 html {
-  min-height: 100%;
-  width: 100%;
-  background-color: #fafafa;
-  color: #212a31;
+	min-height: 100%;
+	width: 100%;
+	background-color: #fafafa;
+	color: #212a31;
 }
 html.dark {
-  background-color: #212a31;
-  color: #d3d9d4;
+	background-color: #212a31;
+	color: #d3d9d4;
 }
 html,
 :has(:target) {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  min-height: 100%;
-  line-height: 1.5;
-  overflow-x: hidden;
-  width: 100%;
-  color: inherit;
-  background-color: inherit;
+	min-height: 100%;
+	line-height: 1.5;
+	overflow-x: hidden;
+	width: 100%;
+	color: inherit;
+	background-color: inherit;
 }
-
-
 
 button,
 label,
 a {
-  position: relative;
-  cursor: pointer;
+	position: relative;
+	cursor: pointer;
 }
 
 :where([stroke]:not([stroke="none"], [stroke^="url"])) {
-  stroke: currentColor;
+	stroke: currentColor;
 }
 
 svg * {
-  transition-property: fill, stroke;
+	transition-property: fill, stroke;
 }

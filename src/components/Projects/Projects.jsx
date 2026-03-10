@@ -30,7 +30,7 @@ const Projects = () => {
 					: {}
 			}
 		>
-			<h2 className="font-bold text-3xl">{t("projects.title")}</h2>
+			<h2 className="font-bold text-3xl max-mobile:text-2xl">{t("projects.title")}</h2>
 			<AnimatedBorder>
 				<div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center   w-full justify-between">
 					<a
@@ -50,7 +50,9 @@ const Projects = () => {
 							href="https://coderr.vladkovach.com/"
 							target="_blank"
 						>
-							<span className="mr-2 text-darkOrange dark:text-lightOrange">Coderr</span>
+							<span className="mr-2 text-darkOrange dark:text-lightOrange text-2xl max-mobile:text-xl">
+								Coderr
+							</span>
 							<GetSvg svg="external" />
 						</a>
 						<ul className="list-disc ml-5 mt-3 space-y-2 text-sm w-full">
@@ -86,7 +88,9 @@ const Projects = () => {
 							href="https://vladkovach.com"
 							target="_blank"
 						>
-							<span className="mr-2 text-darkOrange dark:text-lightOrange">KanMind</span>
+							<span className="mr-2 text-darkOrange text-2xl max-mobile:text-xl dark:text-lightOrange">
+								KanMind
+							</span>
 							<GetSvg svg="external" />
 						</a>
 						<ul className="list-disc ml-5 mt-3 space-y-2 text-sm w-full">
@@ -122,7 +126,9 @@ const Projects = () => {
 							href="https://vladkovach.github.io/plantShop/"
 							target="_blank"
 						>
-							<span className="mr-2 text-darkOrange dark:text-lightOrange">Planty</span>
+							<span className="mr-2 text-darkOrange text-2xl max-mobile:text-xl dark:text-lightOrange">
+								Planty
+							</span>
 							<GetSvg svg="external" />
 						</a>
 						<ul className="list-disc ml-5 mt-3 space-y-2 text-sm w-full">
@@ -159,7 +165,9 @@ const Projects = () => {
 							href="https://posterprint.com.ua"
 							target="_blank"
 						>
-							<span className="mr-2 text-darkOrange dark:text-lightOrange">PosterPrint</span>
+							<span className="mr-2 text-darkOrange text-2xl max-mobile:text-xl dark:text-lightOrange">
+								PosterPrint
+							</span>
 							<GetSvg svg="external" />
 						</a>
 						<ul className="list-disc ml-5 mt-3 space-y-2 text-sm">
