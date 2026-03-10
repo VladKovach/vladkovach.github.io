@@ -1,190 +1,131 @@
 .slider {
-  flex-direction: column;
-  transition: all cubic-bezier(0.71, 0.03, 0.34, 1);
-  width: 145px;
-  position: relative;
-  overflow: hidden;
+	position: relative;
+	overflow: hidden;
+	width: 100%; /* ← takes full available width */
+	max-width: 180px; /* ← shrinks to widest item */
 }
+
 .container {
-  display: flex;
-
-  animation: slider 13s infinite cubic-bezier(0.9, 0.01, 0.3, 0.9);
-}
-/* .slider::before,
-.slider::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0.75rem;
-  height: 100%;
-  filter: blur(5px);
-}
-.slider::before {
-  left: -8px;
-  background: linear-gradient(90deg, rgba(33, 42, 49, 1) 0%, rgba(255, 255, 255, 0.97) 100%);
+	display: flex;
+	flex-direction: row;
+	animation: slider 13s infinite cubic-bezier(0.9, 0.01, 0.3, 0.9);
 }
 
-.slider::after {
-  right: -8px;
-  top: 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.97) 0%, rgba(33, 42, 49, 1) 100%);
-} */
-/* .slider::before, */
-/* .slider::after {
-  animation-name: reveal;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.9, 0.01, 0.3, 0.9);
-}
-@keyframes reveal {
-  0% {
-    opacity: 0.15;
-  }
-  10% {
-    opacity: 1;
-  }
-
-  20% {
-    opacity: 0.15;
-  }
-  30% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0.15;
-  }
-  50% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0.15;
-  }
-  70% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.15;
-  }
-  90% {
-    opacity: 1;
-  }
-} */
 @keyframes slider {
-  0% {
-    transform: translateX(0%);
-  }
-  20% {
-    transform: translateX(-100%);
-  }
-  40% {
-    transform: translateX(-200%);
-  }
-  60% {
-    transform: translateX(-300%);
-  }
-  
+	0% {
+		transform: translateX(0%);
+	}
+	20% {
+		transform: translateX(-100%);
+	}
+	40% {
+		transform: translateX(-200%);
+	}
+	60% {
+		transform: translateX(-300%);
+	}
 }
 .scene {
-  perspective: 800px;
-  transform: rotateY(-30deg);
-  transform-style: preserve-3d;
+	perspective: 800px;
+	transform: rotateY(-30deg);
+	transform-style: preserve-3d;
 }
 
 /* Cube container */
 .cube {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-  animation: cubeMove 6s ease-in-out infinite;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	animation: cubeMove 6s ease-in-out infinite;
 }
 @keyframes cubeMove {
-  0% {
-    transform: translateZ(0px);
-  }
+	0% {
+		transform: translateZ(0px);
+	}
 
-  50% {
-    transform: translateZ(-100px);
-  }
+	50% {
+		transform: translateZ(-100px);
+	}
 
-  100% {
-    transform: translateZ(0px);
-  }
+	100% {
+		transform: translateZ(0px);
+	}
 }
 .cube {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-  transition: transform 0.8s;
-  animation: cubeMove 6s ease-in-out infinite;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	transition: transform 0.8s;
+	animation: cubeMove 6s ease-in-out infinite;
 }
 
 .cube:nth-child(1) {
-  animation-delay: 0s;
+	animation-delay: 0s;
 }
 .cube:nth-child(2) {
-  animation-delay: 1.5s;
+	animation-delay: 1.5s;
 }
 .cube:nth-child(3) {
-  animation-delay: 3s;
+	animation-delay: 3s;
 }
 .cube:nth-child(4) {
-  animation-delay: 4.5s;
+	animation-delay: 4.5s;
 }
 .cube:nth-child(5) {
-  animation-delay: 6s;
+	animation-delay: 6s;
 }
 .cube:nth-child(6) {
-  animation-delay: 7.5s;
+	animation-delay: 7.5s;
 }
 .cube:nth-child(7) {
-  animation-delay: 9s;
+	animation-delay: 9s;
 }
 .cube:nth-child(8) {
-  animation-delay: 10.5s;
+	animation-delay: 10.5s;
 }
 .cube:nth-child(9) {
-  animation-delay: 12s;
+	animation-delay: 12s;
 }
 
 /* Shared face style */
 .cube::before,
 .cube::after,
 .cube > .face {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 0.375rem; /* matches Tailwind's rounded-md */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backface-visibility: visible;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 0.375rem; /* matches Tailwind's rounded-md */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	backface-visibility: visible;
 }
 .cube svg {
-  width: 75%;
-  height: 75%;
-  z-index: 10;
-  position: absolute;
+	width: 75%;
+	height: 75%;
+	z-index: 10;
+	position: absolute;
 }
 /* Faces */
 .cube .face_front {
-  transform: translateZ(25px);
+	transform: translateZ(25px);
 }
 .cube .face_back {
-  transform: rotateY(180deg) translateZ(25px);
+	transform: rotateY(180deg) translateZ(25px);
 }
 .cube .face_right {
-  transform: rotateY(90deg) translateZ(25px);
+	transform: rotateY(90deg) translateZ(25px);
 }
 .cube .face_left {
-  transform: rotateY(-90deg) translateZ(25px);
+	transform: rotateY(-90deg) translateZ(25px);
 }
 .cube .face_top {
-  transform: rotateX(90deg) translateZ(25px);
+	transform: rotateX(90deg) translateZ(25px);
 }
 .cube .face_bottom {
-  transform: rotateX(-90deg) translateZ(25px);
+	transform: rotateX(-90deg) translateZ(25px);
 }
 
 /* .shadowBtn {

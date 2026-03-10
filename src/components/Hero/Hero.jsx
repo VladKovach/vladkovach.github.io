@@ -35,8 +35,8 @@ const Hero = () => {
 					<div className={styles.slider}>
 						<div className={styles.container}>
 							{heroIdeas.map((word) => (
-								<p key={word} className="flex items-center min-w-[145px] pb-2">
-									<span className="">{t(`hero.${word.toLowerCase()}`)}</span>
+								<p key={word} className={`flex items-center gap-1 pb-2 min-w-full ${styles.slide}`}>
+									<span>{t(`hero.${word.toLowerCase()}`)}</span>
 									<span className="rounded-full pb-1">
 										<GetSvg svg={word} />
 									</span>

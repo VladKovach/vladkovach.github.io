@@ -19,7 +19,7 @@ export const Header = () => {
 				onClick={() => setIsMenuOpen(false)}
 				className={`nav-link font-bold duration-200 text-center ${
 					!isMobile
-						? " hover:dark:text-white hover:text-black transition-colors after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:origin-left dark:after:bg-white after:bg-backgroundDark  dark:after:shadow-[0_0_8px_darkOrange] after:shadow-[0_0_8px_black] after:transition-transform after:duration-300 hover:after:scale-x-99"
+						? " hover:dark:text-white hover:text-black  after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:origin-left dark:after:bg-white after:bg-backgroundDark  dark:after:shadow-[0_0_8px_darkOrange] after:shadow-[0_0_8px_black] after:transition-transform after:duration-300 hover:after:scale-x-99"
 						: "shadow-btn dark:shadow-btnDark  w-1/3 rounded active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98"
 				}`}
 			>
@@ -30,7 +30,7 @@ export const Header = () => {
 				onClick={() => setIsMenuOpen(false)}
 				className={`nav-link font-bold duration-200 text-center ${
 					!isMobile
-						? " hover:dark:text-white hover:text-black transition-colors after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:origin-left dark:after:bg-white after:bg-backgroundDark  dark:after:shadow-[0_0_8px_darkOrange] after:shadow-[0_0_8px_black] after:transition-transform after:duration-300 hover:after:scale-x-99"
+						? " hover:dark:text-white hover:text-black  after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:origin-left dark:after:bg-white after:bg-backgroundDark  dark:after:shadow-[0_0_8px_darkOrange] after:shadow-[0_0_8px_black] after:transition-transform after:duration-300 hover:after:scale-x-99"
 						: "shadow-btn dark:shadow-btnDark  w-1/3 rounded active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98"
 				}`}
 			>
@@ -41,7 +41,7 @@ export const Header = () => {
 				onClick={() => setIsMenuOpen(false)}
 				className={`nav-link font-bold duration-200 text-center ${
 					!isMobile
-						? " hover:dark:text-white hover:text-black transition-colors after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:origin-left dark:after:bg-white after:bg-backgroundDark  dark:after:shadow-[0_0_8px_darkOrange] after:shadow-[0_0_8px_black] after:transition-transform after:duration-300 hover:after:scale-x-99"
+						? " hover:dark:text-white hover:text-black  after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:origin-left dark:after:bg-white after:bg-backgroundDark  dark:after:shadow-[0_0_8px_darkOrange] after:shadow-[0_0_8px_black] after:transition-transform after:duration-300 hover:after:scale-x-99"
 						: "shadow-btn dark:shadow-btnDark  w-1/3 rounded active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98"
 				}`}
 			>
@@ -52,7 +52,7 @@ export const Header = () => {
 				onClick={() => setIsMenuOpen(false)}
 				className={`nav-link font-bold duration-200 text-center ${
 					!isMobile
-						? " hover:dark:text-white hover:text-black transition-colors after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:origin-left dark:after:bg-white after:bg-backgroundDark  dark:after:shadow-[0_0_8px_darkOrange] after:shadow-[0_0_8px_black] after:transition-transform after:duration-300 hover:after:scale-x-99"
+						? " hover:dark:text-white hover:text-black  after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:origin-left dark:after:bg-white after:bg-backgroundDark  dark:after:shadow-[0_0_8px_darkOrange] after:shadow-[0_0_8px_black] after:transition-transform after:duration-300 hover:after:scale-x-99"
 						: "shadow-btn dark:shadow-btnDark  w-1/3 rounded active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98"
 				}`}
 			>
@@ -63,7 +63,7 @@ export const Header = () => {
 				onClick={() => setIsMenuOpen(false)}
 				className={`nav-link font-bold duration-200 text-center ${
 					!isMobile
-						? " hover:dark:text-white hover:text-black transition-colors after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:origin-left dark:after:bg-white after:bg-backgroundDark  dark:after:shadow-[0_0_8px_darkOrange] after:shadow-[0_0_8px_black] after:transition-transform after:duration-300 hover:after:scale-x-99"
+						? " hover:dark:text-white hover:text-black  after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 after:origin-left dark:after:bg-white after:bg-backgroundDark  dark:after:shadow-[0_0_8px_darkOrange] after:shadow-[0_0_8px_black] after:transition-transform after:duration-300 hover:after:scale-x-99"
 						: "shadow-btn dark:shadow-btnDark  w-1/3 rounded active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98"
 				}`}
 			>
@@ -76,7 +76,7 @@ export const Header = () => {
 	};
 	return (
 		<header
-			className={`${styles.header}  p-4 w-full bg-backgroundLight dark:bg-backgroundDark  transition-colors duration-100 flex justify-between items-center`}
+			className={`${styles.header}  p-4 w-full bg-backgroundLight dark:bg-backgroundDark   duration-100 flex justify-between items-center`}
 			style={{
 				animationName: theme === "dark" ? "scrollheaderDark" : "scrollheader",
 				animationFillMode: "both",
@@ -115,7 +115,7 @@ export const Header = () => {
 							className={`
             px-3 py-1 rounded shadow 
             flex items-center
-            transition duration-200  mobile:px-1.5  max-mobile:py-0.5 max-mobile:px-1
+            transition duration-200   mobile:px-1.5  max-mobile:py-0.5 max-mobile:px-1
             ${
 							i18n.language === lng
 								? "bg-gradient-to-r from-[#f57f17] to-[#e9a441] text-white shadow-lg scale-105"

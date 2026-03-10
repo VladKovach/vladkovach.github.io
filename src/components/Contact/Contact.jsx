@@ -105,19 +105,44 @@ const Contact = () => {
 			}
 		>
 			<h2 className="font-bold text-3xl max-mobile:text-2xl">{t("contact.title")}</h2>
-			<AnimatedBorder>
+
+			{/* Card wrapper — visible on light, subtle on dark */}
+			<div
+				className="
+            rounded-2xl mt-4
+            border border-gray-200 dark:border-grayLight/20
+            shadow-[0_2px_16px_rgba(0,0,0,0.06)] dark:shadow-card
+            bg-white dark:bg-transparent
+        "
+			>
 				<div className="max-w-xl mx-auto p-6">
-					<p className="mb-6 font-bold text-center">{t("contact.description")}</p>
-					<form onSubmit={handleSubmit} noValidate className="space-y-6">
+					<p className="mb-6 font-bold text-center text-gray-700 dark:text-textLight">
+						{t("contact.description")}
+					</p>
+
+					<form onSubmit={handleSubmit} noValidate className="space-y-5">
 						{inputs.map(({ label, name, type, placeholder }) => (
 							<label key={name} className="block">
-								<span className="block text-sm font-medium">{label}</span>
+								<span
+									className="block text-sm font-medium mb-1
+                                text-gray-600 dark:text-grayLight"
+								>
+									{label}
+								</span>
 								<input
 									className={`
-                    mt-1 block w-full bg-textLight dark:bg-grayDark px-4 py-2 rounded-lg
-                    focus:bg-backgroundLight dark:focus:bg-backgroundDark focus:shadow-card dark:focus:shadow-cardDark focus:outline-none
-                    ${errors[name] && "border border-darkOrange"}
-                  `}
+                                    mt-1 block w-full px-4 py-2 rounded-lg
+                                    bg-gray-100 dark:bg-grayDark
+                                    text-gray-900 dark:text-textLight
+                                    placeholder:text-gray-400 dark:placeholder:text-grayLight/50
+                                    border border-transparent
+                                    focus:border-grayLight/40 dark:focus:border-grayLight/30
+                                    focus:bg-white dark:focus:bg-backgroundDark
+                                    focus:shadow-card dark:focus:shadow-cardDark
+                                    focus:outline-none
+                                    transition-[box-shadow,transform,opacity] duration-200
+                                    ${errors[name] ? "border border-darkOrange" : ""}
+                                `}
 									type={type}
 									name={name}
 									placeholder={placeholder}
@@ -131,13 +156,26 @@ const Contact = () => {
 						))}
 
 						<div className="block">
-							<label className="block text-sm font-medium">{t("contact.messageLabel")}</label>
+							<label
+								className="block text-sm font-medium mb-1
+                            text-gray-600 dark:text-grayLight"
+							>
+								{t("contact.messageLabel")}
+							</label>
 							<textarea
 								className={`
-                  mt-1 block w-full bg-textLight relative dark:bg-grayDark px-4 py-2 rounded-lg resize-none h-32
-                  focus:bg-backgroundLight dark:focus:bg-backgroundDark focus:shadow-card dark:focus:shadow-cardDark focus:outline-none
-                  ${errors.message && "border border-darkOrange"}
-                `}
+                                mt-1 block w-full px-4 py-2 rounded-lg resize-none h-32
+                                bg-gray-100 dark:bg-grayDark
+                                text-gray-900 dark:text-textLight
+                                placeholder:text-gray-400 dark:placeholder:text-grayLight/50
+                                border border-transparent
+                                focus:border-grayLight/40 dark:focus:border-grayLight/30
+                                focus:bg-white dark:focus:bg-backgroundDark
+                                focus:shadow-card dark:focus:shadow-cardDark
+                                focus:outline-none
+                              transition-[box-shadow,transform,opacity] duration-200
+                                ${errors.message ? "border border-darkOrange" : ""}
+                            `}
 								name="message"
 								placeholder={t("contact.messagePlaceholder")}
 								value={values.message}
@@ -150,7 +188,18 @@ const Contact = () => {
 
 						<button
 							type="submit"
-							className="w-full font-bold shadow-btn dark:shadow-btnDark hover:shadow-btnhover dark:hover:shadow-btnDarkHover active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98 py-2 rounded-lg duration-100"
+							className="
+                            w-full font-bold py-2 rounded-lg 
+                            bg-white dark:bg-transparent transition-[box-shadow] duration-100
+
+                            text-gray-800 dark:text-textLight
+                            border border-gray-300 dark:border-transparent
+                            shadow-btn dark:shadow-btnDark
+                            hover:shadow-btnhover dark:hover:shadow-btnDarkHover
+                            active:shadow-btnhover dark:active:shadow-btnDarkHover
+                            active:scale-[0.98]
+                            disabled:opacity-50
+                        "
 							disabled={loading}
 						>
 							{loading ? t("contact.sending") : t("contact.send")}
@@ -161,7 +210,7 @@ const Contact = () => {
 						)}
 					</form>
 				</div>
-			</AnimatedBorder>
+			</div>
 		</div>
 	);
 };
