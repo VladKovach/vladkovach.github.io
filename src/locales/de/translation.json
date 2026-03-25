@@ -17,38 +17,74 @@
 		"intro": "Schön, dich zu sehen😊 Ich bin Vlad, ein Fullstack Entwickler mit dem starken Wunsch, wirkungsvolle digitale Erlebnisse zu schaffen.",
 		"viewProjects": "Projekte ansehen"
 	},
-	"about": {
-		"whatican": "Was kann ich:",
-		"skill1": "Sauberen, skalierbaren Code schreiben",
-		"skill2": "Vielfältige Funktionen implementieren",
-		"skill3": "Flüssige, optimierte, responsive Layouts erstellen",
-		"skill4": "Website-Geschwindigkeit gemäß Core Web Vitals optimieren",
-		"skill5": "Verschiedene APIs integrieren und designfertige Konzepte umsetzen",
-		"skill6": "Elegante Dark Modes entwickeln – von simplen Toggles bis zu vollständig animierten, individuellen Themes",
-		"skill7": "Nahtlos mit React, Vue.js, Angular oder framework-losen Lösungen arbeiten",
-		"skill8": "Effektiv im Team zusammenarbeiten oder eigenständig im Fullstack arbeiten",
-		"skill9": "Leidenschaft in jedes Projekt einbringen – innovative, nutzerzentrierte Erlebnisse schaffen",
-		"skill10": "Ständig lernen und innovieren, um mit der sich entwickelnden Webwelt Schritt zu halten",
+	"languages": {
 		"languagesTitle": "Sprachen:",
-		"language1": "Englisch: B2",
-		"language2": "Deutsch: B2",
-		"language3": "Ukrainisch: Muttersprache",
-		"language4": "Russisch: C1"
+		"en": "Englisch",
+		"de": "Deutsch",
+		"ua": "Ukrainisch",
+		"ru": "Russisch",
+		"native": "Muttersprache",
+		"c1": "C1",
+		"b2": "B2"
 	},
 	"projects": {
 		"title": "Projekte",
-		"description1": "Entwickelte ein responsives/adaptives Design für alle Geräte für einen Online-Shop",
-		"description2": "Implementierte leichte benutzerdefinierte Animationen",
-		"description3": "Erstellte Layout und Funktionalität für einen Online-Shop",
-		"description4": "Entwickelte ein responsives und adaptives Design für alle Geräte",
-		"description5": "Implementierte dynamische Produktkarten und Zahlungsintegration",
-		"description6": "Fügte Authentifizierung mit Auth0 hinzu",
-		"description7": "Verwaltete Routing mit React Router",
-		"description8": "Verwaltete Formulare mit Formik und Validierung mit Yup",
-		"description9": "Integrierte interne und externe APIs",
-		"description10": "Implementierte Fehlerverfolgung mit Sentry",
-		"description11": "Optimierte Performance zur Verbesserung der PageSpeed",
-		"description12": "Effektive Zusammenarbeit im Team und enge Abstimmung mit Backend-Entwicklern"
+		"plantshop": {
+			"description1": "Responsives/adaptives Design für alle Geräte eines Online-Shops erstellt",
+			"description2": "Leichte benutzerdefinierte Animationen implementiert"
+		},
+		"posterprint": {
+			"description1": "Layout und Funktionalität für einen Online-Shop aufgebaut",
+			"description2": "Responsives und adaptives Design für alle Geräte entwickelt",
+			"description3": "Dynamische Produktkarten und Zahlungsintegration implementiert",
+			"description4": "Authentifizierung mit Auth0 hinzugefügt",
+			"description5": "Routing mit React Router verwaltet",
+			"description6": "Formulare mit Formik und Validierung mit Yup verwaltet",
+			"description7": "Interne und externe APIs integriert",
+			"description8": "Fehlerverfolgung mit Sentry implementiert",
+			"description9": "Performance zur Verbesserung der PageSpeed optimiert",
+			"description10": "Im Team zusammengearbeitet und eng mit Backend-Entwicklern abgestimmt"
+		},
+		"kanmind": {
+			"description1": "Ein Backend für ein Kanban-Board mit Django und Django REST Framework entwickelt – unterstützt Boards, Aufgaben und verschachtelte Kommentare.",
+			"description2": "Token-basierte Authentifizierung mit benutzerdefiniertem Benutzermodell implementiert.",
+			"description3": "Granulare Berechtigungsklassen entworfen – Board-Eigentümer, Mitglieder, Aufgabenersteller und Kommentarautoren haben jeweils abgegrenzte Zugriffsrechte.",
+			"description4": "Dedizierte Endpunkte zur Filterung von Aufgaben nach Bearbeiter und Prüfer für effizientes persönliches Aufgabenmanagement bereitgestellt."
+		},
+		"coderr": {
+			"description1": "Ein Dienstleistungsmarktplatz-Backend mit Django REST Framework aufgebaut. Nutzer können Angebote erstellen, Bestellungen aufgeben und Bewertungen hinterlassen.",
+			"description2": "Rollenbasierte Zugriffskontrolle mit Trennung von Geschäfts- und Kundennutzern durch benutzerdefinierte Berechtigungsklassen implementiert.",
+			"description3": "Angebotsfilterung mit django-filters entworfen – unterstützt Suche, Sortierung, Mindestpreis und maximale Lieferzeit.",
+			"description4": "Ein Bestellverwaltungssystem mit Endpunkten für laufende und abgeschlossene Bestellungen pro Geschäftsnutzer aufgebaut.",
+			"description5": "Ein Bewertungssystem mit Filterung und Dashboard-Analysen hinzugefügt."
+		},
+		"habitloop": {
+			"description1": "Eine Full-Stack-App zur Gewohnheitsverfolgung, die Nutzern hilft, konsistente Routinen aufzubauen – inspiriert vom Atomic-Habits-Framework.",
+			"description2": "Ein Django REST Framework Backend mit Gewohnheits- und Tagesprotokoll-Modellen entwickelt, das tägliche, wöchentliche und monatliche Frequenztypen unterstützt.",
+			"description3": "Ein React-Frontend mit interaktivem Monatskalender-Modal entwickelt, das Fortschritt, Streaks und das Atomic-Habit-Loop-Formular anzeigt.",
+			"inDev": "🚧 Derzeit in aktiver Entwicklung – noch nicht live.",
+			"featuresTitle": "Geplante Features:",
+			"feature1": "Benutzerregistrierung und Authentifizierung – aktuell nur für den persönlichen Gebrauch.",
+			"feature2": "Einführungsleitfaden, der Nutzern Best Practices zur Gewohnheitsbildung erklärt.",
+			"feature3": "Weitere UX-Verbesserungen und Gewohnheitsanalysen."
+		},
+		"cvmatch": {
+			"description1": "Eine KI-gestützte Full-Stack-Plattform, die einen Lebenslauf mit einer Stellenbeschreibung abgleicht und einen detaillierten Kompatibilitätsscore mit Skill-Aufschlüsselung liefert.",
+			"description2": "Ein Django REST Framework Backend entwickelt, das Lebensläufe und Stellenbeschreibungen per KI analysiert, strukturierte Daten extrahiert und einen Bewertungsalgorithmus ausführt.",
+			"description3": "Ein React-Frontend mit schrittweisem Abgleich-Ablauf, animierten Ergebniskarten, Score-Ring, gematchten/fehlenden Skill-Pills und einer KI-generierten Zusammenfassung entwickelt.",
+			"inDev": "🚧 Derzeit in aktiver Entwicklung – noch nicht live.",
+			"featuresTitle": "Geplante Features:",
+			"feature1": "KI-Vorstellungsgespräch – 10 maßgeschneiderte technische Fragen basierend auf der Stellenbeschreibung.",
+			"feature2": "Lebenslauf-Verbesserungstipps – umsetzbare Vorschläge zur Erhöhung des Match-Scores.",
+			"feature3": "Persönliches Dashboard zur Verfolgung aller Abgleiche, Ergebnisse und Bewerbungsstatus."
+		},
+		"quizzly": {
+			"description1": "Ein Django REST Framework Backend, das beliebige YouTube-Videos mithilfe von Google Gemini AI in fertige Quiz-Sets umwandelt.",
+			"description2": "Automatische Transkriptextraktion über youtube-transcript-api implementiert – mit Fallback auf automatisch generierte Transkripte in allen Sprachen.",
+			"description3": "Eine KI-Pipeline entwickelt, die das Transkript mit Modell-Fallback über drei Kontingentstufen an Gemini sendet.",
+			"description4": "HttpOnly Cookie-basierte JWT-Authentifizierung, Refresh-Tokens, Token-Blacklisting beim Abmelden und nutzerbezogenem Quiz-Zugriff implementiert.",
+			"description5": "Quizze werden pro Nutzer dedupliziert – das Einreichen derselben Video-URL gibt das bestehende Quiz zurück, anstatt es neu zu generieren."
+		}
 	},
 	"experience": {
 		"title": "Erfahrung",

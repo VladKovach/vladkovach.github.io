@@ -1,7 +1,9 @@
 import plantShop from "../../assets/images/plantShop.png";
-import posterPrint from "../../assets/images/posterPrint.png";
+import habitloop from "../../assets/images/habitloop.png";
 
 import coderr from "../../assets/images/coderr.png";
+import cvmatch from "../../assets/images/cvmatch.png";
+import quizzly from "../../assets/images/quizzly.png";
 
 import kanmind from "../../assets/images/kanmind.png";
 
@@ -31,18 +33,166 @@ const Projects = () => {
 			}
 		>
 			<h2 className="font-bold text-3xl max-mobile:text-2xl">{t("projects.title")}</h2>
+
 			<AnimatedBorder>
-				<div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center   w-full justify-between">
+				<div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center w-full justify-between">
+					<div className="duration-300 shadow ml-2 rounded-projectImg max-mobile:flex max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5">
+						<img
+							className="max-w-90 max-h-130 max-mobile:max-h-100 rounded-projectImg"
+							src={cvmatch}
+							alt="cvmatch"
+						/>
+					</div>
+					<div className="w-3/5 ml-10 max-mobile:ml-0 max-mobile:w-full">
+						<p className="font-bold text-2xl inline-flex items-center">
+							<span className="mr-2 text-darkOrange dark:text-lightOrange text-2xl max-mobile:text-xl">
+								CVmatch.ai
+								<span className="text-sm text-yellow-500 font-normal ml-2">(coming soon...)</span>
+							</span>
+						</p>
+						<ul className="list-disc ml-5 pr-2 mt-3 space-y-2 text-sm w-full">
+							<li>{t("projects.cvmatch.description1")}</li>
+							<li>{t("projects.cvmatch.description2")}</li>
+							<li>{t("projects.cvmatch.description3")}</li>
+						</ul>
+
+						<p className="mt-3 text-sm text-yellow-500 font-medium">
+							{t("projects.cvmatch.inDev")}
+						</p>
+
+						<p className="mt-2 text-sm font-semibold">{t("projects.cvmatch.featuresTitle")}</p>
+						<ul className="list-disc ml-5.5 pr-2 mt-1 space-y-1 text-sm text-grayLight">
+							<li>{t("projects.cvmatch.feature1")}</li>
+							<li>{t("projects.cvmatch.feature2")}</li>
+							<li>{t("projects.cvmatch.feature3")}</li>
+						</ul>
+
+						<div className="mt-5 w-full p-1 max-mobile:text-center">
+							<SkillLogo name="React" index={0} />
+							<SkillLogo name="Python" index={1} />
+							<SkillLogo name="Django" index={2} />
+							<SkillLogo name="Rest" index={3} />
+							<SkillLogo name="OpenAI" index={4} />
+							<SkillLogo name="PostgreSQL" index={5} />
+							<SkillLogo name="GitHub" index={6} />
+						</div>
+					</div>
+				</div>
+			</AnimatedBorder>
+
+			<AnimatedBorder>
+				<div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center w-full justify-between">
 					<a
-						className="duration-300  shadow ml-2  hover:scale-103 rounded-projectImg max-mobile:flex   max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5"
+						className="duration-300 shadow ml-2 hover:scale-103 rounded-projectImg max-mobile:flex max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5"
+						// href=""
+						// target="_blank"
+					>
+						<img
+							className="max-w-90 max-h-130 max-mobile:max-h-100 rounded-projectImg"
+							src={habitloop}
+							alt="habitloop"
+						/>
+					</a>
+					<div className="w-3/5 ml-10 max-mobile:ml-0 max-mobile:w-full">
+						{/* <a
+							className="font-bold text-2xl inline-flex items-center"
+							href="https://github.com/VladKovach/habitloop"
+							target="_blank"
+						> */}
+						<p className="font-bold text-2xl inline-flex items-center">
+							{/* <span className="mr-2 text-darkOrange dark:text-lightOrange text-2xl max-mobile:text-xl">
+								HabitLoop
+							</span>
+							<GetSvg svg="external" /> */}
+							<span className="mr-2 text-darkOrange dark:text-lightOrange text-2xl max-mobile:text-xl">
+								HabitLoop
+								<span className="text-sm text-yellow-500 font-normal ml-2">(coming soon...)</span>
+							</span>
+							{/* </a>  */}
+							{/* TODO: make live wenn deployed */}
+						</p>
+						<ul className="list-disc ml-5 pr-2 mt-3 space-y-2 text-sm w-full">
+							<li>{t("projects.habitloop.description1")}</li>
+							<li>{t("projects.habitloop.description2")}</li>
+							<li>{t("projects.habitloop.description3")}</li>
+						</ul>
+
+						<p className="mt-3 text-sm text-yellow-500 font-medium">
+							{t("projects.habitloop.inDev")}
+						</p>
+
+						<p className="mt-2 text-sm font-semibold">{t("projects.habitloop.featuresTitle")}</p>
+						<ul className="list-disc ml-5.5 pr-2 mt-1 space-y-1 text-sm text-grayLight">
+							<li>{t("projects.habitloop.feature1")}</li>
+							<li>{t("projects.habitloop.feature2")}</li>
+							<li>{t("projects.habitloop.feature3")}</li>
+						</ul>
+						<div className="mt-5 w-full p-1 max-mobile:text-center">
+							<SkillLogo name="React" index={0} />
+							<SkillLogo name="Python" index={1} />
+							<SkillLogo name="Django" index={2} />
+							<SkillLogo name="Rest" index={3} />
+							<SkillLogo name="Css" index={4} />
+							<SkillLogo name="GitHub" index={5} />
+						</div>
+					</div>
+				</div>
+			</AnimatedBorder>
+			<AnimatedBorder>
+				<div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center w-full justify-between">
+					<a
+						className="duration-300 shadow ml-2 hover:scale-103 rounded-projectImg max-mobile:flex max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5"
+						href="https://github.com/VladKovach/quizzly"
+						target="_blank"
+					>
+						<img
+							className="max-w-90 max-h-130 max-mobile:max-h-100 rounded-projectImg"
+							src={quizzly}
+							alt="quizzly"
+						/>
+					</a>
+					<div className="w-3/5 ml-10 max-mobile:ml-0 max-mobile:w-full">
+						<a
+							className="font-bold text-2xl inline-flex items-center"
+							href="https://github.com/VladKovach/quizzly"
+							target="_blank"
+						>
+							<span className="mr-2 text-darkOrange dark:text-lightOrange text-2xl max-mobile:text-xl">
+								Quizzly
+							</span>
+							<GetSvg svg="external" />
+						</a>
+						<ul className="list-disc ml-5 pr-2 mt-3 space-y-2 text-sm w-full">
+							<li>{t("projects.quizzly.description1")}</li>
+							<li>{t("projects.quizzly.description2")}</li>
+							<li>{t("projects.quizzly.description3")}</li>
+							<li>{t("projects.quizzly.description4")}</li>
+							<li>{t("projects.quizzly.description5")}</li>
+						</ul>
+						<div className="mt-5 w-full p-1 max-mobile:text-center">
+							<SkillLogo name="Python" index={0} />
+							<SkillLogo name="Django" index={1} />
+							<SkillLogo name="Rest" index={2} />
+							<SkillLogo name="JWT" index={3} />
+							<SkillLogo name="OpenAI" index={4} />
+							<SkillLogo name="GitHub" index={5} />
+						</div>
+					</div>
+				</div>
+			</AnimatedBorder>
+
+			<AnimatedBorder>
+				<div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center w-full justify-between">
+					<a
+						className="duration-300 shadow ml-2 hover:scale-103 rounded-projectImg max-mobile:flex max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5"
 						href="https://coderr.vladkovach.com/"
 						target="_blank"
 					>
 						<img
-							className="max-w-90 max-h-130 max-mobile:max-h-100 rounded-projectImg  "
+							className="max-w-90 max-h-130 max-mobile:max-h-100 rounded-projectImg"
 							src={coderr}
 							alt="coderr"
-						></img>
+						/>
 					</a>
 					<div className="w-3/5 ml-10 max-mobile:ml-0 max-mobile:w-full">
 						<a
@@ -55,37 +205,42 @@ const Projects = () => {
 							</span>
 							<GetSvg svg="external" />
 						</a>
-						<ul className="list-disc ml-5 mt-3 space-y-2 text-sm w-full">
-							<li>coming soon...</li>
+						<ul className="list-disc ml-5 pr-2 mt-3 space-y-2 text-sm w-full">
+							<li>{t("projects.coderr.description1")}</li>
+							<li>{t("projects.coderr.description2")}</li>
+							<li>{t("projects.coderr.description3")}</li>
+							<li>{t("projects.coderr.description4")}</li>
+							<li>{t("projects.coderr.description5")}</li>
 						</ul>
 						<div className="mt-5 w-full p-1 max-mobile:text-center">
-							{/* <SkillLogo name="Html" index={0} />
-							<SkillLogo name="Scss" index={1} />
-							<SkillLogo name="Js" index={2} />
-							<SkillLogo name="React" index={3} />
-							<SkillLogo name="Webpack" index={4} />
-							<SkillLogo name="Figma" index={5} /> */}
+							<SkillLogo name="Python" index={0} />
+							<SkillLogo name="Django" index={1} />
+							<SkillLogo name="Rest" index={2} />
+							<SkillLogo name="PostgreSQL" index={3} />
+							<SkillLogo name="Postman" index={4} />
+							<SkillLogo name="GitHub" index={5} />
+							<SkillLogo name="JWT" index={6} />
 						</div>
 					</div>
 				</div>
 			</AnimatedBorder>
 			<AnimatedBorder>
-				<div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center   w-full justify-between">
+				<div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center w-full justify-between">
 					<a
-						className="duration-300  shadow ml-2  hover:scale-103 rounded-projectImg max-mobile:flex   max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5"
-						href="https://kanmind.vladkovach.com"
+						className="duration-300 shadow ml-2 hover:scale-103 rounded-projectImg max-mobile:flex max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5"
+						href="https://github.com/VladKovach/kanmind"
 						target="_blank"
 					>
 						<img
-							className="max-w-90 max-h-130 max-mobile:max-h-100 rounded-projectImg  "
+							className="max-w-90 max-h-130 max-mobile:max-h-100 rounded-projectImg"
 							src={kanmind}
-							alt="kanmind"
-						></img>
+							alt="kanMind"
+						/>
 					</a>
 					<div className="w-3/5 ml-10 max-mobile:ml-0 max-mobile:w-full">
 						<a
 							className="font-bold text-2xl inline-flex items-center"
-							href="https://vladkovach.com"
+							href="https://github.com/VladKovach/kanmind"
 							target="_blank"
 						>
 							<span className="mr-2 text-darkOrange text-2xl max-mobile:text-xl dark:text-lightOrange">
@@ -93,16 +248,21 @@ const Projects = () => {
 							</span>
 							<GetSvg svg="external" />
 						</a>
-						<ul className="list-disc ml-5 mt-3 space-y-2 text-sm w-full">
-							<li>coming soon...</li>
+						<ul className="list-disc ml-5  pr-2 mt-3 space-y-2 text-sm">
+							<li>{t("projects.kanmind.description1")}</li>
+							<li>{t("projects.kanmind.description2")}</li>
+							<li>{t("projects.kanmind.description3")}</li>
+							<li>{t("projects.kanmind.description4")}</li>
 						</ul>
+
 						<div className="mt-5 w-full p-1 max-mobile:text-center">
-							{/* <SkillLogo name="Html" index={0} />
-							<SkillLogo name="Scss" index={1} />
-							<SkillLogo name="Js" index={2} />
-							<SkillLogo name="React" index={3} />
-							<SkillLogo name="Webpack" index={4} />
-							<SkillLogo name="Figma" index={5} /> */}
+							<SkillLogo name="Python" index={0} />
+							<SkillLogo name="Django" index={1} />
+							<SkillLogo name="Rest" index={2} />
+							<SkillLogo name="Postgre SQL" index={3} />
+							<SkillLogo name="Postman" index={4} />
+							<SkillLogo name="GitHub" index={5} />
+							<SkillLogo name="JWT" index={6} />
 						</div>
 					</div>
 				</div>
@@ -131,9 +291,9 @@ const Projects = () => {
 							</span>
 							<GetSvg svg="external" />
 						</a>
-						<ul className="list-disc ml-5 mt-3 space-y-2 text-sm w-full">
-							<li>{t("projects.description1")}</li>
-							<li>{t("projects.description2")}</li>
+						<ul className="list-disc ml-5 pr-2 mt-3 space-y-2 text-sm w-full">
+							<li>{t("projects.plantshop.description1")}</li>
+							<li>{t("projects.plantshop.description2")}</li>
 						</ul>
 						<div className="mt-5 w-full p-1 max-mobile:text-center">
 							<SkillLogo name="Html" index={0} />
@@ -142,64 +302,6 @@ const Projects = () => {
 							<SkillLogo name="React" index={3} />
 							<SkillLogo name="Webpack" index={4} />
 							<SkillLogo name="Figma" index={5} />
-						</div>
-					</div>
-				</div>
-			</AnimatedBorder>
-			<AnimatedBorder>
-				<div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center  w-full justify-between">
-					<a
-						className="duration-300  shadow ml-2  hover:scale-103  rounded-projectImg max-mobile:flex max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5"
-						href="https://posterprint.com.ua"
-						target="_blank"
-					>
-						<img
-							className="max-w-90 max-h-130 max-mobile:max-h-100 rounded-projectImg  "
-							src={posterPrint}
-							alt="posterPrint"
-						></img>
-					</a>
-					<div className="w-3/5 ml-10 max-mobile:ml-0 max-mobile:w-full">
-						<a
-							className="font-bold text-2xl inline-flex items-center"
-							href="https://posterprint.com.ua"
-							target="_blank"
-						>
-							<span className="mr-2 text-darkOrange text-2xl max-mobile:text-xl dark:text-lightOrange">
-								PosterPrint
-							</span>
-							<GetSvg svg="external" />
-						</a>
-						<ul className="list-disc ml-5 mt-3 space-y-2 text-sm">
-							<li>{t("projects.description3")}</li>
-							<li>{t("projects.description4")}</li>
-							<li>{t("projects.description5")}</li>
-							<li>{t("projects.description6")}</li>
-							<li>{t("projects.description7")}</li>
-							<li>{t("projects.description8")}</li>
-							<li>{t("projects.description9")}</li>
-							<li>{t("projects.description10")}</li>
-							<li>{t("projects.description11")}</li>{" "}
-						</ul>
-
-						<div className="mt-5 w-full p-1 max-mobile:text-center">
-							<SkillLogo name="Css" index={0} />
-							<SkillLogo name="Next.js" index={1} darkSvg={true} />
-							<SkillLogo name="Redux" index={2} />
-							<SkillLogo name="Formik" index={2} />
-							<SkillLogo name="Jest" index={3} />
-							<SkillLogo name="Rest" index={4} />
-							<SkillLogo name="Webpack" index={5} />
-							<SkillLogo name="Jira" index={6} />
-							<SkillLogo name="Postman" index={7} />
-							<SkillLogo name="Figma" index={8} />
-							<SkillLogo name="GitHub" index={9} />
-
-							{/* <SkillLogo names={['html','scss', 'js', 'react', 'webpack']} index={0}/>
-             <SkillLogo names={['html','scss', 'js', 'react', 'webpack']}index={1}/>
-             <SkillLogo names={['html','scss', 'js', 'react', 'webpack']}index={2}/>
-             <SkillLogo names={['html','scss', 'js', 'react', 'webpack']}index={3}/>
-             <SkillLogo names={['html','scss', 'js', 'react', 'webpack']}index={4}/> */}
 						</div>
 					</div>
 				</div>

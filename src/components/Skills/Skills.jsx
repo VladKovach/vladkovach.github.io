@@ -57,17 +57,15 @@ const categories = [
 	},
 ];
 
-const languages = [
-	{ name: "German", level: "C1", fill: 78 },
-	{ name: "English", level: "B2", fill: 65 },
-	{ name: "Ukrainian", level: "Native", fill: 100 },
-	{ name: "Russian", level: "C1", fill: 85 },
-];
-
 const Skills = () => {
 	const { isFirstTimeVisible } = useSectionObserver();
 	const { t } = useTranslation();
-
+	const languages = [
+		{ name: "languages.de", level: "languages.c1", fill: 78 },
+		{ name: "languages.en", level: "languages.b2", fill: 65 },
+		{ name: "languages.ua", level: "languages.native", fill: 100 },
+		{ name: "languages.ru", level: "languages.c1", fill: 85 },
+	];
 	return (
 		<div
 			className={`mt-10 ${isFirstTimeVisible["skills"] ? "" : "invisible"}`}
@@ -115,12 +113,12 @@ const Skills = () => {
 				{/* ── Languages Section ── */}
 				<div className="rounded-2xl  w-full border-grayLight/20 p-6 shadow-card mt-6">
 					<h2 className="font-bold text-2xl max-mobile:text-xl mb-4">
-						{t("about.languagesTitle")}
+						{t("languages.languagesTitle")}
 					</h2>
 					<div className="flex flex-col gap-3">
 						{languages.map((lang) => (
 							<div key={lang.name} className="flex items-center gap-3">
-								<span className="w-24 text-sm font-medium">{lang.name}</span>
+								<span className="w-24 text-sm font-medium">{t(lang.name)}</span>
 								{/* Progress bar */}
 								<div className="flex-1 h-1.5 rounded-full bg-gray-200 dark:bg-grayDark overflow-hidden">
 									<div
@@ -128,7 +126,9 @@ const Skills = () => {
 										style={{ width: `${lang.fill}%` }}
 									/>
 								</div>
-								<span className="text-xs text-grayLight w-12 text-right">{lang.level}</span>
+								<span className="text-xs text-grayLight min-w-[78px] text-left">
+									{t(lang.level)}
+								</span>
 							</div>
 						))}
 					</div>

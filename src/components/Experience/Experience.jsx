@@ -29,16 +29,11 @@ const Experience = () => {
 					<div className="">
 						<div className="flex items-end max-sm:flex-col max-sm:items-center">
 							<div className=" max-sm:w-full max-sm:flex max-sm:justify-between">
-								<a
-									className="font-bold text-2xl inline-flex items-center"
-									href="https://2event.com/en/"
-									target="_blank"
-								>
+								<p className="font-bold text-2xl inline-flex items-center">
 									<span className="font-bold mr-2 text-2xl max-mobile:text-xl text-darkOrange dark:text-lightOrange">
 										2event
 									</span>
-									<GetSvg svg="external" />
-								</a>
+								</p>
 								<p className="shadow-inset font-bold mt-3 rounded-2xl p-3 ml-2">
 									{t("experience.role1")}
 								</p>
@@ -73,16 +68,11 @@ const Experience = () => {
 					<div className="">
 						<div className="flex items-end max-sm:flex-col max-sm:items-center">
 							<div className=" max-sm:w-full max-sm:flex max-sm:justify-between">
-								<a
-									className="font-bold text-2xl inline-flex items-center"
-									href="https://posterprint.com.ua"
-									target="_blank"
-								>
+								<p className="font-bold text-2xl inline-flex items-center">
 									<span className="font-bold mr-2 text-2xl max-mobile:text-xl text-darkOrange dark:text-lightOrange">
 										PosterPrint
 									</span>
-									<GetSvg svg="external" />
-								</a>
+								</p>
 								<p className="shadow-inset font-bold mt-3 rounded-2xl p-3 ml-2">
 									{t("experience.role2")}
 								</p>

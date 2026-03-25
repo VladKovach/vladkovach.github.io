@@ -17,46 +17,82 @@
 		"intro": "It's nice to see you😊 I'm Vlad, a fullstack developer with a strong desire to create impactful digital experiences.",
 		"viewProjects": "View Projects"
 	},
-	"about": {
-		"whatican": "What I can:",
-		"skill1": "Write clean, scalable code",
-		"skill2": "Implement diverse functionalities",
-		"skill3": "Create smooth, optimized responsive layouts",
-		"skill4": "Optimize site speed in line with Core Web Vitals",
-		"skill5": "Integrate various APIs and turn design-ready concepts into reality",
-		"skill6": "Develop elegant dark modes—from simple toggles to fully animated, custom themes",
-		"skill7": "Work seamlessly with React, Vue.js, Angular, or framework-less solutions",
-		"skill8": "Collaborate effectively within a team or thrive independently on the fullstack",
-		"skill9": "Channel passion into every project—crafting innovative, user-centric experiences",
-		"skill10": "Continuously learn and innovate to keep up with the evolving web",
+	"languages": {
 		"languagesTitle": "Languages:",
-		"language1": "English: B2",
-		"language2": "German: B2",
-		"language3": "Ukrainian: native",
-		"language4": "Russian: C1"
+		"en": "English",
+		"de": "German",
+		"ua": "Ukrainian",
+		"ru": "Russian",
+		"native": "Native",
+		"c1": "C1",
+		"b2": "B2"
 	},
 	"projects": {
 		"title": "Projects",
-		"description1": "Created an all-device-responsive/adaptive design for an online Shop",
-		"description2": "Implemented some light custom animations",
-		"description3": "Built the layout and functionality for an online shop",
-		"descriprion4": "Developed a responsive and adaptive design for all devices",
-		"description5": "Implemented dynamic product cards and payment integration",
-		"description6": "Added authentication using Auth0",
-		"description7": "Handled routing with React Router",
-		"description8": "Managed forms using Formik and validation with Yup",
-		"description9": "Integrated both internal and third-party APIs",
-		"description10": "Implemented error tracking using Sentry",
-		"description11": "Optimized performance to improve PageSpeed",
-		"description12": "Collaborated with team and worked closely with backend developers"
+		"plantshop": {
+			"description1": "Created an all-device-responsive/adaptive design for an online Shop",
+			"description2": "Implemented some light custom animations"
+		},
+
+		"posterprint": {
+			"description1": "Built the layout and functionality for an online shop",
+			"description2": "Developed a responsive and adaptive design for all devices",
+			"description3": "Implemented dynamic product cards and payment integration",
+			"description4": "Added authentication using Auth0",
+			"description5": "Handled routing with React Router",
+			"description6": "Managed forms using Formik and validation with Yup",
+			"description7": "Integrated both internal and third-party APIs",
+			"description8": "Implemented error tracking using Sentry",
+			"description9": "Optimized performance to improve PageSpeed",
+			"description10": "Collaborated with team and worked closely with backend developers"
+		},
+		"kanmind": {
+			"description1": "Built a backend for Kanban board with Django and Django REST Framework, supporting boards, tasks, and threaded comments.",
+			"description2": "Implemented token-based authentication with custom user model.",
+			"description3": "Designed granular permission classes — board owners, members, task creators, and comment authors each have scoped access control.",
+			"description4": "Exposed dedicated endpoints for filtering tasks by assignee and reviewer for efficient personal task management."
+		},
+		"coderr": {
+			"description1": "Built a services marketplace backend with Django REST Framework. Users can create offers, place orders, and leave reviews.",
+			"description2": "Implemented role-based access control separating business and customer users with custom permission classes.",
+			"description3": "Designed offer filtering with django-filters — supports search, ordering, min price, and max delivery time.",
+			"description4": "Built an order management system with in-progress and completed order count endpoints per business user.",
+			"description5": "Added a review system with filtering and dashboard analytics."
+		},
+		"habitloop": {
+			"description1": "A full-stack habit tracking app that helps users build consistent routines inspired by the Atomic Habits framework.",
+			"description2": "Built a Django REST Framework backend with habit and daily log models, supporting daily, weekly, and monthly frequency types.",
+			"description3": "Developed a React frontend with an interactive monthly calendar modal showing progress, streaks, and the Atomic Habit Loop form.",
+			"inDev": "🚧 Currently in active development — not yet live.",
+			"featuresTitle": "Planned features:",
+			"feature1": "User registration and authentication — currently built for personal use only.",
+			"feature2": "Onboarding guide to help users understand habit formation best practices.",
+			"feature3": "Further UX enhancements and habit analytics."
+		},
+		"cvmatch": {
+			"description1": "An AI-powered full-stack platform that matches a CV against a job description and returns a detailed compatibility score with skill breakdown.",
+			"description2": "Built a Django REST Framework backend that parses CVs and job descriptions using AI, extracts structured data, and runs a scoring algorithm.",
+			"description3": "Developed a React frontend with a step-by-step match flow, animated result cards, score ring, matched/missing skill pills, and an AI-generated summary.",
+			"inDev": "🚧 Currently in active development — not yet live.",
+			"featuresTitle": "Planned features:",
+			"feature1": "AI mock interview — 10 tailored technical questions based on the job description.",
+			"feature2": "CV improvement tips — actionable suggestions to increase the match score.",
+			"feature3": "Personal dashboard to track all matches, results, and job application status."
+		},
+		"quizzly": {
+			"description1": "A Django REST Framework backend that converts any YouTube video into a ready-to-use quiz set powered by Google Gemini AI.",
+			"description2": "Implemented automatic transcript extraction via youtube-transcript-api with fallback to auto-generated transcripts across all languages.",
+			"description3": "Built an AI pipeline that sends the transcript to Gemini with model fallback across three quota tiers.",
+			"description4": "Implemented HttpOnly cookie-based JWT authentication with refresh tokens, blacklisting, and user-scoped quiz access.",
+			"description5": "Quizzes are deduplicated per user — submitting the same video URL returns the existing quiz instead of regenerating it."
+		}
 	},
 	"experience": {
 		"title": "Experience",
 		"role1": "Frontend Developer",
 		"desc1": "Development of the admin page and enhancement of functionality for creating events.",
 		"role2": "Frontend Developer",
-		"desc2": "Development of an online shop.",
-		"note": "This portfolio does not represent the full extent of my knowledge, as some projects are still in progress, and others will remain unpublished. I am continuously learning new skills, and for the past six months, I have been intensely improving my English and German to achieve excellence in both spoken and written communication. This portfolio is constantly growing with projects that showcase both my current expertise and newly acquired knowledge."
+		"desc2": "Development of an online shop."
 	},
 	"contact": {
 		"title": "Contact",

@@ -28,7 +28,9 @@ const SkillLogo = ({ name, index, darkSvg }) => {
 						) : null}
 					</div>
 				))}
-				<div className="z-20 rotate-y-180 font-bold text-gray-800 dark:text-textLight">{name}</div>
+				<div className="z-20 rotate-y-180 font-bold text-gray-800 dark:text-textLight break-words text-center text-xs ">
+					{name}
+				</div>
 			</div>
 		</div>
 	);
