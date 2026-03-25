@@ -69,12 +69,13 @@ const Projects = () => {
 
 						<div className="mt-5 w-full p-1 max-mobile:text-center">
 							<SkillLogo name="React" index={0} />
-							<SkillLogo name="Python" index={1} />
-							<SkillLogo name="Django" index={2} />
-							<SkillLogo name="Rest" index={3} />
-							<SkillLogo name="OpenAI" index={4} />
-							<SkillLogo name="PostgreSQL" index={5} />
-							<SkillLogo name="GitHub" index={6} />
+							<SkillLogo name="Css" index={1} />
+							<SkillLogo name="Python" index={2} />
+							<SkillLogo name="Django" index={3} />
+							<SkillLogo name="Rest" index={4} />
+							<SkillLogo name="OpenAI" index={5} />
+							<SkillLogo name="PostgreSQL" index={6} />
+							<SkillLogo name="GitHub" index={7} />
 						</div>
 					</div>
 				</div>
@@ -129,11 +130,13 @@ const Projects = () => {
 						</ul>
 						<div className="mt-5 w-full p-1 max-mobile:text-center">
 							<SkillLogo name="React" index={0} />
-							<SkillLogo name="Python" index={1} />
-							<SkillLogo name="Django" index={2} />
-							<SkillLogo name="Rest" index={3} />
-							<SkillLogo name="Css" index={4} />
-							<SkillLogo name="GitHub" index={5} />
+							<SkillLogo name="Css" index={1} />
+							<SkillLogo name="Python" index={2} />
+							<SkillLogo name="Django" index={3} />
+							<SkillLogo name="Rest" index={4} />
+							<SkillLogo name="Css" index={5} />
+							<SkillLogo name="PostgreSQL" index={6} />
+							<SkillLogo name="GitHub" index={7} />
 						</div>
 					</div>
 				</div>
@@ -174,8 +177,9 @@ const Projects = () => {
 							<SkillLogo name="Django" index={1} />
 							<SkillLogo name="Rest" index={2} />
 							<SkillLogo name="JWT" index={3} />
-							<SkillLogo name="OpenAI" index={4} />
-							<SkillLogo name="GitHub" index={5} />
+							<SkillLogo name="Gemini" index={4} />
+							<SkillLogo name="PostgreSQL" index={5} />
+							<SkillLogo name="GitHub" index={6} />
 						</div>
 					</div>
 				</div>
@@ -259,7 +263,7 @@ const Projects = () => {
 							<SkillLogo name="Python" index={0} />
 							<SkillLogo name="Django" index={1} />
 							<SkillLogo name="Rest" index={2} />
-							<SkillLogo name="Postgre SQL" index={3} />
+							<SkillLogo name="PostgreSQL" index={3} />
 							<SkillLogo name="Postman" index={4} />
 							<SkillLogo name="GitHub" index={5} />
 							<SkillLogo name="JWT" index={6} />
