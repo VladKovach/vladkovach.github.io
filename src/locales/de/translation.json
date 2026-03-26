@@ -78,12 +78,12 @@
 			"feature2": "Lebenslauf-Verbesserungstipps – umsetzbare Vorschläge zur Erhöhung des Match-Scores.",
 			"feature3": "Persönliches Dashboard zur Verfolgung aller Abgleiche, Ergebnisse und Bewerbungsstatus."
 		},
-		"quizzly": {
+		"quizly": {
 			"description1": "Ein Django REST Framework Backend, das beliebige YouTube-Videos mithilfe von Google Gemini AI in fertige Quiz-Sets umwandelt.",
 			"description2": "Automatische Transkriptextraktion über youtube-transcript-api implementiert – mit Fallback auf automatisch generierte Transkripte in allen Sprachen.",
 			"description3": "Eine KI-Pipeline entwickelt, die das Transkript mit Modell-Fallback über drei Kontingentstufen an Gemini sendet.",
 			"description4": "HttpOnly Cookie-basierte JWT-Authentifizierung, Refresh-Tokens, Token-Blacklisting beim Abmelden und nutzerbezogenem Quiz-Zugriff implementiert.",
-			"description5": "Quizze werden pro Nutzer dedupliziert – das Einreichen derselben Video-URL gibt das bestehende Quiz zurück, anstatt es neu zu generieren."
+			"description5": "Quizze werden pro Nutzer dedupliziert – das Einreichen derselben Video-URL gibt das bestehende Quiz zurück."
 		}
 	},
 	"experience": {

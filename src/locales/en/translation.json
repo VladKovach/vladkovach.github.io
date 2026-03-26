@@ -79,12 +79,12 @@
 			"feature2": "CV improvement tips — actionable suggestions to increase the match score.",
 			"feature3": "Personal dashboard to track all matches, results, and job application status."
 		},
-		"quizzly": {
+		"quizly": {
 			"description1": "A Django REST Framework backend that converts any YouTube video into a ready-to-use quiz set powered by Google Gemini AI.",
 			"description2": "Implemented automatic transcript extraction via youtube-transcript-api with fallback to auto-generated transcripts across all languages.",
 			"description3": "Built an AI pipeline that sends the transcript to Gemini with model fallback across three quota tiers.",
 			"description4": "Implemented HttpOnly cookie-based JWT authentication with refresh tokens, blacklisting, and user-scoped quiz access.",
-			"description5": "Quizzes are deduplicated per user — submitting the same video URL returns the existing quiz instead of regenerating it."
+			"description5": "Quizzes are deduplicated per user — submitting the same video URL returns the existing quiz."
 		}
 	},
 	"experience": {

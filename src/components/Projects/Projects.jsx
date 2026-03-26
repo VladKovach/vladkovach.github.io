@@ -3,7 +3,7 @@ import habitloop from "../../assets/images/habitloop.png";
 
 import coderr from "../../assets/images/coderr.png";
 import cvmatch from "../../assets/images/cvmatch.png";
-import quizzly from "../../assets/images/quizzly.png";
+import quizly from "../../assets/images/quizly.png";
 
 import kanmind from "../../assets/images/kanmind.png";
 
@@ -145,32 +145,32 @@ const Projects = () => {
 				<div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center w-full justify-between">
 					<a
 						className="duration-300 shadow ml-2 hover:scale-103 rounded-projectImg max-mobile:flex max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5"
-						href="https://github.com/VladKovach/quizzly"
+						href="https://quizly.vladkovach.com/"
 						target="_blank"
 					>
 						<img
 							className="max-w-90 max-h-130 max-mobile:max-h-100 rounded-projectImg"
-							src={quizzly}
-							alt="quizzly"
+							src={quizly}
+							alt="quizly"
 						/>
 					</a>
 					<div className="w-3/5 ml-10 max-mobile:ml-0 max-mobile:w-full">
 						<a
 							className="font-bold text-2xl inline-flex items-center"
-							href="https://github.com/VladKovach/quizzly"
+							href="https://quizly.vladkovach.com/"
 							target="_blank"
 						>
 							<span className="mr-2 text-darkOrange dark:text-lightOrange text-2xl max-mobile:text-xl">
-								Quizzly
+								Quizly
 							</span>
 							<GetSvg svg="external" />
 						</a>
 						<ul className="list-disc ml-5 pr-2 mt-3 space-y-2 text-sm w-full">
-							<li>{t("projects.quizzly.description1")}</li>
-							<li>{t("projects.quizzly.description2")}</li>
-							<li>{t("projects.quizzly.description3")}</li>
-							<li>{t("projects.quizzly.description4")}</li>
-							<li>{t("projects.quizzly.description5")}</li>
+							<li>{t("projects.quizly.description1")}</li>
+							<li>{t("projects.quizly.description2")}</li>
+							<li>{t("projects.quizly.description3")}</li>
+							<li>{t("projects.quizly.description4")}</li>
+							<li>{t("projects.quizly.description5")}</li>
 						</ul>
 						<div className="mt-5 w-full p-1 max-mobile:text-center">
 							<SkillLogo name="Python" index={0} />
