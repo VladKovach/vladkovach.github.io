@@ -148,9 +148,9 @@ const Projects = () => {
 			<AnimatedBorder>
 				<div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center w-full justify-between">
 					<a
-						className="duration-300 shadow ml-2 !cursor-auto hover:scale-103 rounded-projectImg max-mobile:flex max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5"
-						// href=""
-						// target="_blank"
+						className="duration-300 shadow ml-2  hover:scale-103 rounded-projectImg max-mobile:flex max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5"
+						href="https://github.com/VladKovach/quizly"
+						target="_blank"
 					>
 						<img
 							className="max-w-90 max-h-130 max-mobile:max-h-100 rounded-projectImg"
@@ -159,17 +159,16 @@ const Projects = () => {
 						/>
 					</a>
 					<div className="w-3/5 ml-10 max-mobile:ml-0 max-mobile:w-full">
-						<p
+						<a
 							className="font-bold text-2xl inline-flex items-center"
-							// href=""
-							// target="_blank"
+							href="https://github.com/VladKovach/quizly"
+							target="_blank"
 						>
 							<span className="mr-2 text-darkOrange dark:text-lightOrange text-2xl max-mobile:text-xl">
 								Quizly
-								<span className="text-sm text-yellow-500 font-normal ml-2">(coming soon...)</span>
 							</span>
-							{/* <GetSvg svg="external" /> */}
-						</p>
+							<GetSvg svg="external" />
+						</a>
 						<ul className="list-disc ml-5 pr-2 mt-3 space-y-2 text-sm w-full">
 							<li>{t("projects.quizly.description1")}</li>
 							<li>{t("projects.quizly.description2")}</li>
