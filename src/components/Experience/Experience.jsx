@@ -35,7 +35,7 @@ const Experience = () => {
 									</span>
 								</p>
 								<p className="shadow-inset font-bold mt-3 rounded-2xl p-3 ml-2">
-									{t("experience.role1")}
+									{t("experience.2event.role")}
 								</p>
 							</div>
 							<div className="w-3/5 max-sm:w-full max-sm:mt-5 ml-10 max-sm:ml-0 mb-1 pb-2 flex justify-between border-b-[3px]">
@@ -47,7 +47,10 @@ const Experience = () => {
 								</p>
 							</div>
 						</div>
-						<p className="mt-7">{t("experience.desc1")}</p>
+						<p className="mt-7">- {t("experience.2event.description1")}</p>
+						<p className="mt-7">- {t("experience.2event.description2")}</p>
+						<p className="mt-7">- {t("experience.2event.description3")}</p>
+						<p className="mt-7">- {t("experience.2event.description4")}</p>
 
 						<div className="mt-5 w-full p-1 max-mobile:text-center">
 							<SkillLogo name="Vue.js" index={0} />
@@ -74,7 +77,7 @@ const Experience = () => {
 									</span>
 								</p>
 								<p className="shadow-inset font-bold mt-3 rounded-2xl p-3 ml-2">
-									{t("experience.role2")}
+									{t("experience.posterPrint.role")}
 								</p>
 							</div>
 							<div className="w-3/5 max-sm:w-full max-sm:mt-5 ml-10 max-sm:ml-0 mb-1 pb-2 flex justify-between border-b-[3px]">
@@ -86,7 +89,10 @@ const Experience = () => {
 								</p>
 							</div>
 						</div>
-						<p className="mt-7">{t("experience.desc2")}</p>
+						<p className="mt-7">- {t("experience.posterPrint.description1")}</p>
+						<p className="mt-7">- {t("experience.posterPrint.description2")}</p>
+						<p className="mt-7">- {t("experience.posterPrint.description3")}</p>
+
 						<div className="mt-5 w-full p-1 max-mobile:text-center">
 							<SkillLogo name="Next.js" index={1} darkSvg={true} />
 							<SkillLogo name="Css" index={2} />

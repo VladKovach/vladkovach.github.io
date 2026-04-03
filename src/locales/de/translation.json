@@ -46,25 +46,25 @@
 			"description10": "Im Team zusammengearbeitet und eng mit Backend-Entwicklern abgestimmt"
 		},
 		"kanmind": {
-			"description1": "Ein Backend für ein Kanban-Board mit Django und Django REST Framework entwickelt – unterstützt Boards, Aufgaben und verschachtelte Kommentare.",
-			"description2": "Token-basierte Authentifizierung mit benutzerdefiniertem Benutzermodell implementiert.",
-			"description3": "Granulare Berechtigungsklassen entworfen – Board-Eigentümer, Mitglieder, Aufgabenersteller und Kommentarautoren haben jeweils abgegrenzte Zugriffsrechte.",
-			"description4": "Dedizierte Endpunkte zur Filterung von Aufgaben nach Bearbeiter und Prüfer für effizientes persönliches Aufgabenmanagement bereitgestellt."
+			"description1": "Backend für ein Kanban-Board mit Django und Django REST Framework. Unterstützt Boards, Aufgaben und verschachtelte Kommentare.",
+			"description2": "Token-basierte Authentifizierung mit benutzerdefiniertem Benutzermodell.",
+			"description3": "Granulare Berechtigungsklassen: Board-Eigentümer, Mitglieder, Aufgabenersteller und Kommentarautoren haben jeweils abgegrenzte Zugriffsrechte.",
+			"description4": "Dedizierte Endpunkte zur Filterung von Aufgaben nach Bearbeiter und Prüfer für effizientes persönliches Aufgabenmanagement."
 		},
 		"coderr": {
 			"description1": "Ein Dienstleistungsmarktplatz-Backend mit Django REST Framework aufgebaut. Nutzer können Angebote erstellen, Bestellungen aufgeben und Bewertungen hinterlassen.",
 			"description2": "Rollenbasierte Zugriffskontrolle mit Trennung von Geschäfts- und Kundennutzern durch benutzerdefinierte Berechtigungsklassen implementiert.",
-			"description3": "Angebotsfilterung mit django-filters entworfen – unterstützt Suche, Sortierung, Mindestpreis und maximale Lieferzeit.",
+			"description3": "Angebotsfilterung mit django-filters entworfen unterstützt Suche, Sortierung, Mindestpreis und maximale Lieferzeit.",
 			"description4": "Ein Bestellverwaltungssystem mit Endpunkten für laufende und abgeschlossene Bestellungen pro Geschäftsnutzer aufgebaut.",
 			"description5": "Ein Bewertungssystem mit Filterung und Dashboard-Analysen hinzugefügt."
 		},
 		"habitloop": {
-			"description1": "Eine Full-Stack-App zur Gewohnheitsverfolgung, die Nutzern hilft, konsistente Routinen aufzubauen – inspiriert vom Atomic-Habits-Framework.",
+			"description1": "Eine Full-Stack-App zur Gewohnheitsverfolgung, die Nutzern hilft, konsistente Routinen aufzubauen inspiriert vom Atomic-Habits-Framework.",
 			"description2": "Ein Django REST Framework Backend mit Gewohnheits- und Tagesprotokoll-Modellen entwickelt, das tägliche, wöchentliche und monatliche Frequenztypen unterstützt.",
 			"description3": "Ein React-Frontend mit interaktivem Monatskalender-Modal entwickelt, das Fortschritt, Streaks und das Atomic-Habit-Loop-Formular anzeigt.",
-			"inDev": "🚧 Derzeit in aktiver Entwicklung – noch nicht live.",
+			"inDev": "🚧 Derzeit in aktiver Entwicklung noch nicht live.",
 			"featuresTitle": "Geplante Features:",
-			"feature1": "Benutzerregistrierung und Authentifizierung – aktuell nur für den persönlichen Gebrauch.",
+			"feature1": "Benutzerregistrierung und Authentifizierung aktuell nur für den persönlichen Gebrauch.",
 			"feature2": "Einführungsleitfaden, der Nutzern Best Practices zur Gewohnheitsbildung erklärt.",
 			"feature3": "Weitere UX-Verbesserungen und Gewohnheitsanalysen."
 		},
@@ -72,27 +72,35 @@
 			"description1": "Eine KI-gestützte Full-Stack-Plattform, die einen Lebenslauf mit einer Stellenbeschreibung abgleicht und einen detaillierten Kompatibilitätsscore mit Skill-Aufschlüsselung liefert.",
 			"description2": "Ein Django REST Framework Backend entwickelt, das Lebensläufe und Stellenbeschreibungen per KI analysiert, strukturierte Daten extrahiert und einen Bewertungsalgorithmus ausführt.",
 			"description3": "Ein React-Frontend mit schrittweisem Abgleich-Ablauf, animierten Ergebniskarten, Score-Ring, gematchten/fehlenden Skill-Pills und einer KI-generierten Zusammenfassung entwickelt.",
-			"inDev": "🚧 Derzeit in aktiver Entwicklung – noch nicht live.",
+			"inDev": "🚧 Derzeit in aktiver Entwicklung noch nicht live.",
 			"featuresTitle": "Geplante Features:",
-			"feature1": "KI-Vorstellungsgespräch – 10 maßgeschneiderte technische Fragen basierend auf der Stellenbeschreibung.",
-			"feature2": "Lebenslauf-Verbesserungstipps – umsetzbare Vorschläge zur Erhöhung des Match-Scores.",
+			"feature1": "KI-Vorstellungsgespräch 10 maßgeschneiderte technische Fragen basierend auf der Stellenbeschreibung.",
+			"feature2": "Lebenslauf-Verbesserungstipps umsetzbare Vorschläge zur Erhöhung des Match-Scores.",
 			"feature3": "Persönliches Dashboard zur Verfolgung aller Abgleiche, Ergebnisse und Bewerbungsstatus."
 		},
 		"quizly": {
 			"description1": "Ein Django REST Framework Backend, das beliebige YouTube-Videos mithilfe von Google Gemini AI in fertige Quiz-Sets umwandelt.",
-			"description2": "Automatische Transkriptextraktion über youtube-transcript-api implementiert – mit Fallback auf automatisch generierte Transkripte in allen Sprachen.",
+			"description2": "Automatische Transkriptextraktion über youtube-transcript-api implementiert mit Fallback auf automatisch generierte Transkripte in allen Sprachen.",
 			"description3": "Eine KI-Pipeline entwickelt, die das Transkript mit Modell-Fallback über drei Kontingentstufen an Gemini sendet.",
 			"description4": "HttpOnly Cookie-basierte JWT-Authentifizierung, Refresh-Tokens, Token-Blacklisting beim Abmelden und nutzerbezogenem Quiz-Zugriff implementiert.",
-			"description5": "Quizze werden pro Nutzer dedupliziert – das Einreichen derselben Video-URL gibt das bestehende Quiz zurück."
+			"description5": "Quizze werden pro Nutzer dedupliziert das Einreichen derselben Video-URL gibt das bestehende Quiz zurück."
 		}
 	},
 	"experience": {
 		"title": "Erfahrung",
-		"role1": "Frontend-Entwickler",
-		"desc1": "Entwicklung der Admin-Seite und Erweiterung der Funktionalität zur Erstellung von Events.",
-		"role2": "Frontend-Entwickler",
-		"desc2": "Entwicklung eines Online-Shops.",
-		"note": "Dieses Portfolio stellt nicht das volle Ausmaß meines Wissens dar, da einige Projekte noch in Arbeit sind und andere unveröffentlicht bleiben werden. Ich lerne kontinuierlich neue Fähigkeiten, und in den letzten sechs Monaten habe ich intensiv mein Englisch und Deutsch verbessert, um sowohl in mündlicher als auch schriftlicher Kommunikation Exzellenz zu erreichen. Dieses Portfolio wächst ständig mit Projekten, die sowohl meine aktuelle Expertise als auch neu erworbenes Wissen zeigen."
+		"2event": {
+			"role": "Frontend Entwickler",
+			"description1": "Entwickelte und pflegte Vue.js Komponenten für Event Erstellungs und Bearbeitungsoberflächen.",
+			"description2": "Integrierte REST APIs in enger Zusammenarbeit mit Backend Entwicklern.",
+			"description3": "Implementierte neue UI Flows für Event Erstellung und Verwaltung.",
+			"description4": "Verwendete GitHub und GitLab für Code-Reviews, Issues und Team-Zusammenarbeit."
+		},
+		"posterPrint": {
+			"role": "Frontend Entwickler",
+			"description1": "Entwickelte und pflegte Frontend Features mit React, Next.js und Redux.",
+			"description2": "Verbesserte PageSpeed und Lighthouse Scores auf 90+, optimierte Performance über alle Geräte hinweg.",
+			"description3": "Rresponsive und adaptive Layouts für Desktop und Mobile."
+		}
 	},
 	"contact": {
 		"title": "Kontakt",

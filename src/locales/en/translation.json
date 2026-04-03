@@ -89,10 +89,19 @@
 	},
 	"experience": {
 		"title": "Experience",
-		"role1": "Frontend Developer",
-		"desc1": "Development of the admin page and enhancement of functionality for creating events.",
-		"role2": "Frontend Developer",
-		"desc2": "Development of an online shop."
+		"2event": {
+			"role": "Frontend Developer",
+			"description1": "Built and maintained Vue.js components for event creation and editing screens.",
+			"description2": "Integrated REST APIs in close collaboration with backend developers.",
+			"description3": "Implemented new UI flows for event creation and management.",
+			"description4": "Used GitHub and GitLab for code reviews, issues, and team collaboration."
+		},
+		"posterPrint": {
+			"role": "Frontend Developer",
+			"description1": "Developed and maintained frontend features using React, Next.js, and Redux.",
+			"description2": "Improved PageSpeed and Lighthouse scores to 90+, optimizing performance across devices.",
+			"description3": "Implemented responsive and adaptive layouts for desktop and mobile."
+		}
 	},
 	"contact": {
 		"title": "Contact",
