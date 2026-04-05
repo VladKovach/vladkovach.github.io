@@ -1,68 +1,33 @@
-.slider {
-	position: relative;
-	overflow: hidden;
-	width: 100%; /* ← takes full available width */
-	max-width: 180px; /* ← shrinks to widest item */
-}
-
-.container {
-	display: flex;
-	flex-direction: row;
-	animation: slider 13s infinite cubic-bezier(0.9, 0.01, 0.3, 0.9);
-}
-
-@keyframes slider {
-	0% {
-		transform: translateX(0%);
-	}
-	20% {
-		transform: translateX(-100%);
-	}
-	40% {
-		transform: translateX(-200%);
-	}
-	60% {
-		transform: translateX(-300%);
-	}
-}
 .scene {
-	perspective: 800px;
+	perspective: 1200px;
 	transform: rotateY(-30deg);
 	transform-style: preserve-3d;
+	isolation: isolate;
 }
 
 /* Cube container */
 .cube {
 	position: relative;
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 	transform-style: preserve-3d;
-	transform: rotateY(0deg);
+	transform: rotateX(15deg) rotateY(-35deg);
 	animation: cubeMove 6s ease-in-out infinite;
 }
+
 @keyframes cubeMove {
 	0% {
-		transform: translateZ(0px);
+		transform: rotateX(15deg) rotateY(-35deg) translateZ(0px);
 	}
-
 	50% {
-		transform: translateZ(-100px);
+		transform: rotateX(15deg) rotateY(-35deg) translateZ(-100px);
 	}
-
 	100% {
-		transform: translateZ(0px);
+		transform: rotateX(15deg) rotateY(-35deg) translateZ(0px);
 	}
 }
-.cube {
-	position: relative;
-	width: 50px;
-	height: 50px;
-	transform-style: preserve-3d;
-	transform: rotateY(0deg);
-	transition: transform 0.8s;
-	animation: cubeMove 6s ease-in-out infinite;
-}
 
+/* Animation delays */
 .cube:nth-child(1) {
 	animation-delay: 0s;
 }
@@ -91,49 +56,81 @@
 	animation-delay: 12s;
 }
 
-/* Shared face style */
-.cube::before,
-.cube::after,
+/* =========================
+   FACE BASE STYLE
+========================= */
 .cube > .face {
 	position: absolute;
 	width: 50px;
 	height: 50px;
-	border-radius: 0.375rem; /* matches Tailwind's rounded-md */
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 0.375rem;
 	backface-visibility: visible;
+
+	/* LIGHT MODE */
+	background: linear-gradient(145deg, #ffffff, #e6e6e6);
+
+	box-shadow:
+		0 10px 25px rgba(0, 0, 0, 0.25),
+		/* top light */ inset 0 -3px 6px rgba(0, 0, 0, 0.15); /* bottom shade */
 }
-.cube svg {
-	width: 75%;
-	height: 75%;
-	z-index: 10;
-	position: absolute;
+
+/* DARK MODE */
+:global(html.dark) .cube > .face {
+	background: linear-gradient(145deg, #2e3944, #1f272d);
+
+	box-shadow:
+		0 10px 25px rgba(0, 0, 0, 0.6),
+		inset 0 -3px 6px rgba(0, 0, 0, 0.6);
 }
-/* Faces */
-.cube .face_front {
+
+/* =========================
+   FACE POSITIONS
+========================= */
+.face_front {
 	transform: translateZ(25px);
 }
-.cube .face_back {
+.face_back {
 	transform: rotateY(180deg) translateZ(25px);
 }
-.cube .face_right {
+.face_right {
 	transform: rotateY(90deg) translateZ(25px);
 }
-.cube .face_left {
+.face_left {
 	transform: rotateY(-90deg) translateZ(25px);
 }
-.cube .face_top {
+.face_top {
 	transform: rotateX(90deg) translateZ(25px);
 }
-.cube .face_bottom {
+.face_bottom {
 	transform: rotateX(-90deg) translateZ(25px);
 }
 
-/* .shadowBtn {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  transition: all;
-  transition-duration: 0.3s;
+/* =========================
+   LIGHT DIRECTION (KEY!)
+========================= */
+.face_front {
+	filter: brightness(1);
 }
-.shadowBtn:hover {
-  box-shadow: rgb(0, 0, 0, 0.4) 3px 3px 6px 0px inset;
-} */
+.face_right {
+	filter: brightness(0.85);
+}
+.face_left {
+	filter: brightness(0.75);
+}
+.face_top {
+	filter: brightness(1.15);
+}
+.face_bottom {
+	filter: brightness(0.6);
+}
+.face_back {
+	filter: brightness(0.7);
+}
+
+/* SVG inside cube */
+.cube svg {
+	width: 70%;
+	height: 70%;
+	position: absolute;
+	z-index: 2;
+}
