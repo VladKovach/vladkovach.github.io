@@ -46,44 +46,44 @@
 			"description10": "Im Team zusammengearbeitet und eng mit Backend-Entwicklern abgestimmt"
 		},
 		"kanmind": {
-			"description1": "Backend für ein Kanban-Board mit Django und Django REST Framework. Unterstützt Boards, Aufgaben und verschachtelte Kommentare.",
-			"description2": "Token-basierte Authentifizierung mit benutzerdefiniertem Benutzermodell.",
-			"description3": "Granulare Berechtigungsklassen: Board-Eigentümer, Mitglieder, Aufgabenersteller und Kommentarautoren haben jeweils abgegrenzte Zugriffsrechte.",
+			"description1": "Backend für Kanban Board mit Django und Django REST Framework, unterstützt Boards, Aufgaben und verschachtelte Kommentare.",
+			"description2": "Token basierte Authentifizierung mit benutzerdefiniertem Benutzermodell.",
+			"description3": "Granulare Berechtigungsklassen für Board Eigentümer, Mitglieder, Aufgabenersteller und Kommentarautoren.",
 			"description4": "Dedizierte Endpunkte zur Filterung von Aufgaben nach Bearbeiter und Prüfer für effizientes persönliches Aufgabenmanagement."
 		},
 		"coderr": {
-			"description1": "Ein Dienstleistungsmarktplatz-Backend mit Django REST Framework aufgebaut. Nutzer können Angebote erstellen, Bestellungen aufgeben und Bewertungen hinterlassen.",
-			"description2": "Rollenbasierte Zugriffskontrolle mit Trennung von Geschäfts- und Kundennutzern durch benutzerdefinierte Berechtigungsklassen implementiert.",
-			"description3": "Angebotsfilterung mit django-filters entworfen unterstützt Suche, Sortierung, Mindestpreis und maximale Lieferzeit.",
-			"description4": "Ein Bestellverwaltungssystem mit Endpunkten für laufende und abgeschlossene Bestellungen pro Geschäftsnutzer aufgebaut.",
-			"description5": "Ein Bewertungssystem mit Filterung und Dashboard-Analysen hinzugefügt."
+			"description1": "Dienstleistungsmarktplatz Backend mit Django REST Framework, Angebote erstellen, Bestellungen aufgeben, Bewertungen hinterlassen.",
+			"description2": "Rollenbasierte Zugriffskontrolle mit Trennung von Geschäfts und Kundennutzern durch benutzerdefinierte Berechtigungsklassen.",
+			"description3": "Angebotsfilterung mit django filters, unterstützt Suche, Sortierung, Mindestpreis und maximale Lieferzeit.",
+			"description4": "Bestellverwaltungssystem mit Endpunkten für laufende und abgeschlossene Bestellungen pro Geschäftsnutzer.",
+			"description5": "Bewertungssystem mit Filterung und Dashboard Analysen."
 		},
 		"habitloop": {
-			"description1": "Eine Full-Stack-App zur Gewohnheitsverfolgung, die Nutzern hilft, konsistente Routinen aufzubauen inspiriert vom Atomic-Habits-Framework.",
-			"description2": "Ein Django REST Framework Backend mit Gewohnheits- und Tagesprotokoll-Modellen entwickelt, das tägliche, wöchentliche und monatliche Frequenztypen unterstützt.",
-			"description3": "Ein React-Frontend mit interaktivem Monatskalender-Modal entwickelt, das Fortschritt, Streaks und das Atomic-Habit-Loop-Formular anzeigt.",
-			"inDev": "🚧 Derzeit in aktiver Entwicklung noch nicht live.",
+			"description1": "Full Stack App zur Gewohnheitsverfolgung basierend auf Atomic Habits, konsistente Routinen aufbauen.",
+			"description2": "Django REST Framework Backend mit Gewohnheits und Tagesprotokoll Modellen für tägliche, wöchentliche und monatliche Frequenzen.",
+			"description3": "React Frontend mit interaktivem Monatskalender Modal für Fortschritt, Streaks und Atomic Habit Loop Formular.",
+			"inDev": "🚧 Derzeit in aktiver Entwicklung — noch nicht live.",
 			"featuresTitle": "Geplante Features:",
-			"feature1": "Benutzerregistrierung und Authentifizierung aktuell nur für den persönlichen Gebrauch.",
-			"feature2": "Einführungsleitfaden, der Nutzern Best Practices zur Gewohnheitsbildung erklärt.",
-			"feature3": "Weitere UX-Verbesserungen und Gewohnheitsanalysen."
+			"feature1": "Benutzerregistrierung und Authentifizierung — aktuell nur für persönlichen Gebrauch.",
+			"feature2": "Einführungsleitfaden zu Best Practices der Gewohnheitsbildung.",
+			"feature3": "Weitere UX Verbesserungen und Gewohnheitsanalysen."
 		},
 		"cvmatch": {
-			"description1": "Eine KI-gestützte Full-Stack-Plattform, die einen Lebenslauf mit einer Stellenbeschreibung abgleicht und einen detaillierten Kompatibilitätsscore mit Skill-Aufschlüsselung liefert.",
-			"description2": "Ein Django REST Framework Backend entwickelt, das Lebensläufe und Stellenbeschreibungen per KI analysiert, strukturierte Daten extrahiert und einen Bewertungsalgorithmus ausführt.",
-			"description3": "Ein React-Frontend mit schrittweisem Abgleich-Ablauf, animierten Ergebniskarten, Score-Ring, gematchten/fehlenden Skill-Pills und einer KI-generierten Zusammenfassung entwickelt.",
-			"inDev": "🚧 Derzeit in aktiver Entwicklung noch nicht live.",
+			"description1": "KI gestützte Full Stack Plattform für CV Job Matching mit detailliertem Kompatibilitätsscore und Skill Aufschlüsselung.",
+			"description2": "Django REST Framework Backend mit KI Analyse von CVs und Stellenbeschreibungen, Scoring für Hard Skills, Soft Skills, Erfahrung, Bildung und Location.",
+			"description3": "React Frontend mit schrittweisem Workflow, animierten Ergebniskarten, Score Ring, Skill Pills und KI Zusammenfassung.",
+			"inDev": "🚧 Derzeit in aktiver Entwicklung — noch nicht live.",
 			"featuresTitle": "Geplante Features:",
-			"feature1": "KI-Vorstellungsgespräch 10 maßgeschneiderte technische Fragen basierend auf der Stellenbeschreibung.",
-			"feature2": "Lebenslauf-Verbesserungstipps umsetzbare Vorschläge zur Erhöhung des Match-Scores.",
-			"feature3": "Persönliches Dashboard zur Verfolgung aller Abgleiche, Ergebnisse und Bewerbungsstatus."
+			"feature1": "KI Vorstellungsgespräch mit 10 maßgeschneiderten technischen Fragen.",
+			"feature2": "CV Verbesserungstipps mit konkreten Vorschlägen zur Erhöhung des Match Scores.",
+			"feature3": "Persönliches Dashboard für Abgleiche, Ergebnisse und Bewerbungs Tracking."
 		},
 		"quizly": {
-			"description1": "Ein Django REST Framework Backend, das beliebige YouTube-Videos mithilfe von Google Gemini AI in fertige Quiz-Sets umwandelt.",
-			"description2": "Automatische Transkriptextraktion über youtube-transcript-api implementiert mit Fallback auf automatisch generierte Transkripte in allen Sprachen.",
-			"description3": "Eine KI-Pipeline entwickelt, die das Transkript mit Modell-Fallback über drei Kontingentstufen an Gemini sendet.",
-			"description4": "HttpOnly Cookie-basierte JWT-Authentifizierung, Refresh-Tokens, Token-Blacklisting beim Abmelden und nutzerbezogenem Quiz-Zugriff implementiert.",
-			"description5": "Quizze werden pro Nutzer dedupliziert das Einreichen derselben Video-URL gibt das bestehende Quiz zurück."
+			"description1": "Django REST Framework Backend, YouTube Videos zu fertigen Quiz Sets via Google Gemini AI.",
+			"description2": "Automatische Transkriptextraktion über youtube transcript api mit Fallback auf generierte Transkripte.",
+			"description3": "KI Pipeline mit Gemini Modell Fallback (Pro → Flash → 2.0 Flash) für Quota Management.",
+			"description4": "Cookie basierte JWT Authentifizierung mit HttpOnly Refresh Tokens und Token Blacklisting.",
+			"description5": "User spezifische Quiz Deduplizierung, gleiche Video URL liefert bestehendes Quiz zurück."
 		}
 	},
 	"experience": {

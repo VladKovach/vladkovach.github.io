@@ -1,4 +1,3 @@
-import plantShop from "../../assets/images/plantShop.png";
 import habitloop from "../../assets/images/habitloop.png";
 
 import coderr from "../../assets/images/coderr.png";
@@ -236,7 +235,7 @@ const Projects = () => {
 				<div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center w-full justify-between">
 					<a
 						className="duration-300 shadow ml-2 hover:scale-103 rounded-projectImg max-mobile:flex max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5"
-						href="https://github.com/VladKovach/kanmind"
+						href="https://kanmind.vladkovach.com"
 						target="_blank"
 					>
 						<img
@@ -248,7 +247,7 @@ const Projects = () => {
 					<div className="w-3/5 ml-10 max-mobile:ml-0 max-mobile:w-full">
 						<a
 							className="font-bold text-2xl inline-flex items-center"
-							href="https://github.com/VladKovach/kanmind"
+							href="https://kanmind.vladkovach.com"
 							target="_blank"
 						>
 							<span className="mr-2 text-darkOrange text-2xl max-mobile:text-xl dark:text-lightOrange">

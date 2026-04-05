@@ -72,7 +72,7 @@
 		"cvmatch": {
 			"description1": "An AI-powered full-stack platform that matches a CV against a job description and returns a detailed compatibility score with skill breakdown.",
 			"description2": "Built a Django REST Framework backend that parses CVs and job descriptions using AI, extracts structured data, and runs a scoring algorithm.",
-			"description3": "Developed a React frontend with a step-by-step match flow, animated result cards, score ring, matched/missing skill pills, and an AI-generated summary.",
+			"description3": "Developed a React frontend with a step-by-step match flow, animated result cards, score ring, matched/missing skills, and an AI-generated summary.",
 			"inDev": "🚧 Currently in active development — not yet live.",
 			"featuresTitle": "Planned features:",
 			"feature1": "AI mock interview — 10 tailored technical questions based on the job description.",
