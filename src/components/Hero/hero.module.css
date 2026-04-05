@@ -1,3 +1,31 @@
+.slider {
+	position: relative;
+	overflow: hidden;
+	width: 100%; /* ← takes full available width */
+	max-width: 180px; /* ← shrinks to widest item */
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	animation: slider 13s infinite cubic-bezier(0.9, 0.01, 0.3, 0.9);
+}
+
+@keyframes slider {
+	0% {
+		transform: translateX(0%);
+	}
+	20% {
+		transform: translateX(-100%);
+	}
+	40% {
+		transform: translateX(-200%);
+	}
+	60% {
+		transform: translateX(-300%);
+	}
+}
+
 .scene {
 	perspective: 1200px;
 	transform: rotateY(-30deg);
