@@ -1,19 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { GetSvg } from "../GetSvg";
-import styles from "./hero.module.css";
+import { IdeasSlider } from "./IdeasSlider/IdeasSlider";
+import { CubesScene } from "./CubesScene/CubesScene";
 
-const cubes = [
-	{ id: "cube-1", svg: "Html", svg2: "Css" },
-	{ id: "cube-2", svg: "Js", svg2: "Ts" },
-	{ id: "cube-3", svg: "React", svg2: "Next.js" },
-	{ id: "cube-4", svg: "Scss", svg2: "Tailwind" },
-	{ id: "cube-5", svg: "Git", svg2: "GitHub" },
-	{ id: "cube-6", svg: "Angular", svg2: "Vue.js" },
-	{ id: "cube-7", svg: "Python", svg2: "Django" },
-	{ id: "cube-8", svg: "Vite", svg2: "PostgreSQL" },
-	{ id: "cube-9", svg: "Rest", svg2: "Pytest" },
-];
-const heroIdeas = ["imagine", "plan", "desire", "think"];
 const Hero = () => {
 	const { t } = useTranslation();
 	return (
@@ -32,18 +20,7 @@ const Hero = () => {
 						{t("hero.lets")}
 					</span>{" "}
 					{t("hero.buildWhat")}
-					<div className={styles.slider}>
-						<div className={styles.container}>
-							{heroIdeas.map((word) => (
-								<p key={word} className={`flex items-center gap-1 pb-2 min-w-full ${styles.slide}`}>
-									<span>{t(`hero.${word.toLowerCase()}`)}</span>
-									<span className="rounded-full pb-1">
-										<GetSvg svg={word} />
-									</span>
-								</p>
-							))}
-						</div>
-					</div>
+					<IdeasSlider />
 				</h1>
 				<p className="text-lg max-mobile:text-sm mt-4</p> font-bold">
 					<span className="text-darkOrange dark:text-lightOrange text-xl max-mobile:text-lg">
@@ -58,28 +35,7 @@ const Hero = () => {
 					{t("hero.viewProjects")}
 				</a>
 			</div>
-			<div
-				className={`grid grid-cols-3 gap-4.5 max-sm:w-[200px] max-sm:mt-8  content-center ${styles.scene}`}
-			>
-				{cubes.map((cube) => (
-					<div key={cube.id} className={styles.cube}>
-						<div
-							className={`${styles.face} ${styles.face_front}  inline-flex items-center justify-center`}
-						>
-							<GetSvg svg={cube.svg} />
-						</div>
-						<div className={`${styles.face} ${styles.face_back} `}></div>
-						<div
-							className={`${styles.face} ${styles.face_right} inline-flex items-center justify-center `}
-						>
-							<GetSvg svg={cube.svg2} />
-						</div>
-						<div className={`${styles.face} ${styles.face_left} `}></div>
-						<div className={`${styles.face} ${styles.face_top} `}></div>
-						<div className={`${styles.face} ${styles.face_bottom} `}></div>
-					</div>
-				))}
-			</div>
+			<CubesScene />
 		</div>
 	);
 };

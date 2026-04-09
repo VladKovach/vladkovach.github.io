@@ -1,31 +1,3 @@
-.slider {
-	position: relative;
-	overflow: hidden;
-	width: 100%; /* ← takes full available width */
-	max-width: 180px; /* ← shrinks to widest item */
-}
-
-.container {
-	display: flex;
-	flex-direction: row;
-	animation: slider 13s infinite cubic-bezier(0.9, 0.01, 0.3, 0.9);
-}
-
-@keyframes slider {
-	0% {
-		transform: translateX(0%);
-	}
-	20% {
-		transform: translateX(-100%);
-	}
-	40% {
-		transform: translateX(-200%);
-	}
-	60% {
-		transform: translateX(-300%);
-	}
-}
-
 .scene {
 	perspective: 1200px;
 	transform: rotateY(-30deg);
@@ -33,7 +5,6 @@
 	isolation: isolate;
 }
 
-/* Cube container */
 .cube {
 	position: relative;
 	width: 60px;
@@ -55,7 +26,6 @@
 	}
 }
 
-/* Animation delays */
 .cube:nth-child(1) {
 	animation-delay: 0s;
 }
@@ -84,9 +54,6 @@
 	animation-delay: 12s;
 }
 
-/* =========================
-   FACE BASE STYLE
-========================= */
 .cube > .face {
 	position: absolute;
 	width: 50px;
@@ -94,15 +61,13 @@
 	border-radius: 0.375rem;
 	backface-visibility: visible;
 
-	/* LIGHT MODE */
 	background: linear-gradient(145deg, #ffffff, #e6e6e6);
 
 	box-shadow:
 		0 10px 25px rgba(0, 0, 0, 0.25),
-		/* top light */ inset 0 -3px 6px rgba(0, 0, 0, 0.15); /* bottom shade */
+		inset 0 -3px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* DARK MODE */
 :global(html.dark) .cube > .face {
 	background: linear-gradient(145deg, #2e3944, #1f272d);
 
@@ -111,9 +76,6 @@
 		inset 0 -3px 6px rgba(0, 0, 0, 0.6);
 }
 
-/* =========================
-   FACE POSITIONS
-========================= */
 .face_front {
 	transform: translateZ(25px);
 }
@@ -133,9 +95,6 @@
 	transform: rotateX(-90deg) translateZ(25px);
 }
 
-/* =========================
-   LIGHT DIRECTION (KEY!)
-========================= */
 .face_front {
 	filter: brightness(1);
 }
@@ -155,7 +114,6 @@
 	filter: brightness(0.7);
 }
 
-/* SVG inside cube */
 .cube svg {
 	width: 70%;
 	height: 70%;
