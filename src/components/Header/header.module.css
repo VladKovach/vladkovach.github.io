@@ -77,8 +77,8 @@
 	cursor: pointer;
 	height: 24px;
 	position: absolute;
-	top: 18px;
-	left: 120px;
+	top: 24px;
+	left: 114px;
 	width: 24px;
 	transform: translateX(-50%);
 	transition: all 0.2s;
