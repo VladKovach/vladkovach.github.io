@@ -28,16 +28,14 @@ export default function SideNav() {
 							<li key={sec.id}>
 								<a
 									href={`#${sec.id}`}
-									className={`
-                    block w-5 h-5 max-sm:w-4 max-sm:h-4
-                    ${
-											isActive
-												? "bg-grayDark dark:bg-textLight rotate-135 scale-110"
-												: "bg-textLight dark:bg-grayDark"
-										}
-                    border-textLight dark:border-grayDark
-                    transition-all duration-1000
-                  `}
+									className={` block w-5 h-5 max-sm:w-4 max-sm:h-4 ${
+										isActive
+											? "bg-grayDark dark:bg-textLight rotate-135 scale-110"
+											: "bg-textLight dark:bg-grayDark"
+									}
+                				    border-textLight dark:border-grayDark
+                				    transition-all duration-1000
+                  					`}
 									title={sec.label}
 								/>
 							</li>

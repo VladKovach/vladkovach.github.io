@@ -113,7 +113,7 @@
 	border-left: 4px solid;
 	border-right: 4px solid;
 	border-color: inherit;
-	transform: translateX(-50%) rotate(-145deg);
+	transform: translateX(-50%) rotate(-136deg);
 	&::before {
 		top: 8px;
 		left: 4px;

@@ -1,14 +1,13 @@
-import React from "react";
 import { AnimatedBorder } from "../ui/AnimatedBorder/AnimatedBorder";
-import { GetSvg } from "../GetSvg";
 import SkillLogo from "../ui/SkillLogo/SkillLogo";
 import { useSectionObserver } from "../../hooks/useSectionObserver";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "../../context/ThemeContext";
 
 const Experience = () => {
 	const { isFirstTimeVisible } = useSectionObserver();
 	const { t } = useTranslation();
-
+	const { theme } = useTheme();
 	return (
 		<div
 			className={`flex flex-col mt-10 z-21 ${isFirstTimeVisible["experience"] ? "" : "invisible"}`}
@@ -94,7 +93,7 @@ const Experience = () => {
 						<p className="mt-7">- {t("experience.posterPrint.description3")}</p>
 
 						<div className="mt-5 w-full p-1 max-mobile:text-center">
-							<SkillLogo name="Next.js" index={1} darkSvg={true} />
+							<SkillLogo name="Next.js" index={1} darkSvg={theme == "dark"} />
 							<SkillLogo name="Css" index={2} />
 							<SkillLogo name="Js" index={3} />
 							<SkillLogo name="Webpack" index={5} />

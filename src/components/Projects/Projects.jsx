@@ -11,10 +11,11 @@ import { AnimatedBorder } from "../ui/AnimatedBorder/AnimatedBorder";
 import { GetSvg } from "../GetSvg";
 import { useSectionObserver } from "../../hooks/useSectionObserver";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "../../context/ThemeContext";
 
 const Projects = () => {
 	const { isFirstTimeVisible } = useSectionObserver();
-
+	const { theme } = useTheme();
 	const { t } = useTranslation();
 
 	return (
@@ -76,7 +77,7 @@ const Projects = () => {
 							<SkillLogo name="Python" index={2} />
 							<SkillLogo name="Django" index={3} />
 							<SkillLogo name="Rest" index={4} />
-							<SkillLogo name="OpenAI" index={5} />
+							<SkillLogo name="OpenAI" index={5} darkSvg={theme == "dark"} />
 							<SkillLogo name="PostgreSQL" index={6} />
 							<SkillLogo name="GitHub" index={7} />
 						</div>

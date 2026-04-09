@@ -23,7 +23,7 @@ const SkillLogo = ({ name, index, darkSvg }) => {
 					>
 						{i === 9 ? (
 							<div className="z-20">
-								<GetSvg svg={name} width="40" height="40" darkSvg />
+								<GetSvg svg={name} width="40" height="40" darkSvg={darkSvg} />
 							</div>
 						) : null}
 					</div>
